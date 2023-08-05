@@ -1,0 +1,11 @@
+@use '../bootstrap.scss' as *;
+
+.additional-catalog__list {
+  @include reset-list;
+}
+
+.additional-product-card__title {
+  margin-top: 0;
+  @include font-title-card;
+  line-height: 16px;
+}

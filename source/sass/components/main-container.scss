@@ -1,0 +1,11 @@
+@use '../bootstrap.scss' as *;
+
+.main-container {
+  width: 320px;
+}
+
+.main-container__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}

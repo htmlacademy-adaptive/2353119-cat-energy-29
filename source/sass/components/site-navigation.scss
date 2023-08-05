@@ -1,0 +1,15 @@
+@use '../bootstrap.scss' as *;
+
+.site-navigation {
+  display: none;
+  @include reset-list;
+}
+
+.site-navigation__link {
+  font-family: $oswald;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $title-color;
+}

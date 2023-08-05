@@ -1,0 +1,11 @@
+@use '../bootstrap.scss' as *;
+
+.main-footer {
+  width: 320px;
+}
+
+.main-footer__container {
+  display: grid;
+  gap: 40px;
+  padding: 40px 0;
+}

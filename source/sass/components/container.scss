@@ -1,0 +1,9 @@
+@use '../bootstrap.scss' as *;
+
+.container {
+  padding: 0 20px;
+
+  &--bg-color_gray {
+    background-color: $main-gray;
+  }
+}

@@ -1,0 +1,12 @@
+@use '../bootstrap.scss' as *;
+
+
+.program__list {
+  display: grid;
+  row-gap: 20px;
+  @include reset-list;
+}
+
+.program__item {
+  background-color: $main-gray;
+}

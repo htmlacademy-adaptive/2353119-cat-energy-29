@@ -1,0 +1,6 @@
+@use "../bootstrap.scss" as *;
+
+
+.catalog__list {
+  @include reset-list;
+}

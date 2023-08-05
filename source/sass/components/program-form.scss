@@ -1,0 +1,15 @@
+@use '../bootstrap.scss' as *;
+
+.program-form {
+  font-family: $oswald;
+  font-size: 16px;
+  // font-style: normal;
+  // font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.program-form__description {
+  font-size: 14px;
+  color: $title-color;
+}
