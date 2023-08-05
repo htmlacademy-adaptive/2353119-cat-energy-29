@@ -1,8 +1,9 @@
-@use '../bootstrap.scss' as *;
+@use "../bootstrap.scss" as *;
 
 
 .title {
   margin-top: 0;
+
   @include font-title;
 
   &--primary {

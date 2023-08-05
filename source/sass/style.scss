@@ -1,32 +1,23 @@
 // global
-@use './bootstrap.scss';
-@use './global/base.scss';
-@use './global/fonts.scss';
-@use './global/variables.scss';
-@use './global/visually-hidden.scss';
-
-
+@use "./bootstrap.scss";
+@use "./global/base.scss";
+@use "./global/fonts.scss";
+@use "./global/variables.scss";
+@use "./global/visually-hidden.scss";
 //components
-@use './components/container.scss';
-@use './components/title.scss';
-
-@use './components/page.scss';
-@use './components/main-header.scss';
-@use './components/main-container.scss';
-@use './components/main-footer.scss';
-
-@use './components/site-navigation.scss';
-
-
-@use './components/hero.scss';
-@use './components/program.scss';
-
-@use './components/catalog.scss';
-@use './components/product.scss';
-@use './components/additional-catalog.scss';
-@use './components/promo.scss';
-
-@use './components/program-form.scss';
-@use './components/fieldset.scss';
-
-@use './components/button.scss';
+@use "./components/container.scss";
+@use "./components/title.scss";
+@use "./components/page.scss";
+@use "./components/main-header.scss";
+@use "./components/main-container.scss";
+@use "./components/main-footer.scss";
+@use "./components/site-navigation.scss";
+@use "./components/hero.scss";
+@use "./components/program.scss";
+@use "./components/catalog.scss";
+@use "./components/product.scss";
+@use "./components/additional-catalog.scss";
+@use "./components/promo.scss";
+@use "./components/program-form.scss";
+@use "./components/fieldset.scss";
+@use "./components/button.scss";

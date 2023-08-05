@@ -1,19 +1,19 @@
-@use 'variables.scss' as*;
+@use "variables.scss" as*;
 
 @font-face {
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(../fonts/oswald/oswaldregular.woff2) format('woff2'),
-    url(../fonts/oswald/oswaldregular.woff) format('woff');
+  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswald/oswaldregular.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(../fonts/lato/Lato-Regular.woff2) format('woff2'),
-    url(../fonts/lato/Lato-Regular.woff) format('woff');
+  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2"),
+    url("../fonts/lato/Lato-Regular.woff") format("woff");
 }

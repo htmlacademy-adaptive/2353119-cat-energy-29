@@ -1,7 +1,8 @@
-@use '../bootstrap.scss' as *;
+@use "../bootstrap.scss" as *;
 
 .site-navigation {
   display: none;
+
   @include reset-list;
 }
 

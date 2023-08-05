@@ -1,4 +1,4 @@
-@use '../bootstrap.scss' as *;
+@use "../bootstrap.scss" as *;
 
 .promo {
   display: grid;
@@ -7,7 +7,7 @@
   padding: 58px 40px 43px;
   color: $main;
   background-image: linear-gradient($bg-color, $bg-color),
-    url('../img/promo/promo-cat-background.jpg');
+    url("../img/promo/promo-cat-background.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: 100%, cover;

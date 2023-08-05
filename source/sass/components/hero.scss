@@ -1,8 +1,8 @@
-@use '../bootstrap.scss' as *;
+@use "../bootstrap.scss" as *;
 
 .hero {
   background-image: linear-gradient($bg-color, $bg-color),
-    url('../img/hero/hero-cat-background.jpg');
+    url("../img/hero/hero-cat-background.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: center top, center top;
   background-size: 100% 302px, contain;
