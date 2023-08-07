@@ -1,0 +1,19 @@
+@use "../bootstrap.scss" as *;
+
+.hero {
+  position: relative;
+}
+
+.hero__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 302px;
+  background-image: linear-gradient($bg-color, $bg-color), url("../img/hero/hero-cat-background.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top, center top;
+  background-size: 100% 302px, contain;
+  z-index: -1;
+}

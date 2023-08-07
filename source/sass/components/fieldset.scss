@@ -1,0 +1,17 @@
+@use "../bootstrap.scss" as *;
+
+.fieldset__legend {
+  line-height: 26px;
+}
+
+.fieldset__list {
+  @include reset-list;
+}
+
+.field__input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-transform: uppercase;
+  color: inherit;
+}

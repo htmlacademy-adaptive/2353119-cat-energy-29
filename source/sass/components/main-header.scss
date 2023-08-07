@@ -1,0 +1,11 @@
+.main-header {
+  width: 320px;
+}
+
+.main-header__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}

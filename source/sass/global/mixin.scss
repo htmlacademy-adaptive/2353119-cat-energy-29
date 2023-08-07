@@ -1,0 +1,19 @@
+@use "variables.scss" as *;
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin font-title {
+  font-family: $oswald;
+  font-weight: 400;
+  color: $title-color;
+}
+
+@mixin font-title-card {
+  @include font-title;
+  font-size: 16px;
+  text-transform: uppercase;
+}

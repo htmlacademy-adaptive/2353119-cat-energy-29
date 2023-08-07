@@ -1,0 +1,25 @@
+@use "bootstrap.scss" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: $lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-color;
+  background-color: $main-white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
