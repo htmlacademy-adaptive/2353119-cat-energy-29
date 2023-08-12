@@ -1,0 +1,23 @@
+@use "../bootstrap.scss" as *;
+
+.details__title {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
+}
+
+.details__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    display: flex;
+    column-gap: 80px;
+  }
+}

@@ -1,0 +1,37 @@
+@use "../bootstrap.scss" as *;
+
+.data-cat__list {
+  &--first {
+    margin-bottom: 24px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+    }
+  }
+
+  &--second {
+    @include padding-reset;
+
+    padding: 22px 20px 19px;
+    border-top: 1px solid $base-border-color;
+    border-bottom: 1px solid $base-border-color;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      padding: 23px 27px 27px;
+      border: 1px solid $base-border-color;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 25px 28px;
+    }
+  }
+}
+
+.data-cat__input {
+  padding: 11px 20px;
+}

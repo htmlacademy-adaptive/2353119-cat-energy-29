@@ -1,0 +1,156 @@
+@use "../bootstrap.scss" as *;
+
+.form__fieldset {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    align-items: center;
+  }
+
+  &--data-cat {
+    margin-bottom: 26px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &--data-owner {
+    margin-bottom: 24px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &--comment {
+    margin-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &--details {
+    margin-bottom: 34px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 54px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 61px;
+    }
+  }
+}
+
+.form__list {
+  @include reset-list;
+
+  display: grid;
+  row-gap: 13px;
+}
+
+
+.form__field {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 13px;
+
+  &--radio,
+  &--checkbox {
+    column-gap: 15px;
+  }
+
+  &--comment {
+    @include padding-reset;
+
+    padding: 15px 35px;
+    grid-template-columns: 1fr;
+    border-top: 1px solid $input-border-color;
+    border-bottom: 1px solid $input-border-color;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      padding: 11px 20px;
+      border: 1px solid $input-border-color;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1 / -1;
+      padding: 9px 20px;
+    }
+  }
+}
+
+.form__input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-transform: uppercase;
+  color: inherit;
+  border: 1px solid $input-border-color;
+
+  &--textarea {
+    resize: none;
+    border: none;
+    min-height: 150px;
+  }
+}
+
+.fieldset__legend {
+  line-height: 26px;
+}
+
+.form__control-mark {
+  position: relative;
+
+  &::before {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $special-border-color;
+    content: "";
+  }
+
+  &--radio::before {
+    border-radius: 50%;
+  }
+
+  &::after {
+    display: block;
+    content: "";
+  }
+
+  &--radio::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 13px;
+    height: 13px;
+    background-color: $base-bg-color;
+    border-radius: 50%;
+  }
+
+  &--checkbox::after {
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}

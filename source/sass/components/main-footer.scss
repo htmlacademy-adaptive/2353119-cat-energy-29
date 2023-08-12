@@ -1,9 +1,22 @@
+@use "../bootstrap.scss" as *;
+
 .main-footer {
-  width: 320px;
+  @include break-point;
 }
 
 .main-footer__container {
   display: grid;
+  align-items: center;
   gap: 40px;
   padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 0;
+  }
 }

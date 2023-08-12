@@ -7,13 +7,41 @@
 }
 
 @mixin font-title {
-  font-family: $oswald;
+  font-family: $font-oswald;
   font-weight: 400;
-  color: $title-color;
+  color: $base-black;
 }
 
 @mixin font-title-card {
   @include font-title;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+
+@mixin button-reset {
+  display: block;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+@mixin break-point {
+  max-width: 540px;
+
+  @media (min-width: $tablet-width) {
+    min-width: $tablet-width;
+    max-width: 960px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: $desktop-width;
+    max-width: 1600px;
+  }
+}
+
+//костыль?
+@mixin padding-reset {
+  margin: 0 -20px;
+  padding: 0 20px;
 }

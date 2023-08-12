@@ -3,4 +3,8 @@
 
 .catalog__list {
   @include reset-list;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
 }

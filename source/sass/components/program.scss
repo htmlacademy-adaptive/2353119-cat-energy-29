@@ -6,8 +6,15 @@
   row-gap: 20px;
 
   @include reset-list;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin-bottom: 71px;
+  }
 }
 
 .program__item {
-  background-color: $main-gray;
+  background-color: $base-gray;
 }

@@ -1,0 +1,23 @@
+@use "../bootstrap.scss" as *;
+
+.products {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 324px);
+    gap: 60px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(auto-fill, 245px);
+    gap: 63px 80px;
+  }
+}
+
+.products__item {
+  padding: 20px 0 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 81px 0 0;
+  }
+}

@@ -1,0 +1,29 @@
+@use "../bootstrap.scss" as *;
+
+.example {
+  padding: 25px 0 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 0 101px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 75px;
+  }
+}
+
+.example__title {
+  margin-bottom: 40px;
+}
+
+.example__text {
+  margin: 20px 0;
+}
+
+.example__list {
+  margin: 0;
+}
+
+.example__compare-slider {
+  margin: 0 auto;
+}
