@@ -1,7 +1,7 @@
 @use "../bootstrap.scss" as *;
 
 .main-header {
-  max-width: 540px;
+  position: relative;
 
   &--inner {
     margin-bottom: 27px;
