@@ -1,0 +1,49 @@
+@use "../bootstrap.scss" as *;
+
+.instructions {
+  margin-bottom: 49px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
+}
+
+.instructions__title {
+  margin-bottom: 40px;
+}
+
+.instructions__list {
+  @include reset-list;
+
+  display: grid;
+  row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(auto-fill, 250px);
+    column-gap: 133px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    column-gap: 74px;
+  }
+}
+
+.instructions-list__item {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  max-width: 250px;
+
+  &::before {
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    background-color: $base-bg-color;
+    content: "";
+  }
+}
+
+.instructions-list__description {
+  margin: 0;
+}

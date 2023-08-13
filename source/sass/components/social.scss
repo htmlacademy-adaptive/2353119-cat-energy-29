@@ -1,0 +1,17 @@
+@use "../bootstrap.scss" as *;
+
+.social {
+  @include reset-list;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.social__link {
+  display: grid;
+  place-content: center;
+  width: 28px;
+  height: 22px;
+}

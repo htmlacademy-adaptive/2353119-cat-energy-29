@@ -1,0 +1,23 @@
+@use "../bootstrap.scss" as *;
+
+.data-owner__title {
+  margin-bottom: 35px;
+}
+
+.data-owner__field {
+  &:not(:last-child) {
+    margin-bottom: 14px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+  }
+}
+
+.data-owner__input {
+  padding: 11px 40px 11px 20px;
+}

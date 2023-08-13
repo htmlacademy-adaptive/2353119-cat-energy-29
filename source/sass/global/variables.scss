@@ -1,13 +1,24 @@
 // color
-$main-white: #ffffff;
-$main-gray: #f2f2f2;
-$text-color: #444444;
-$title-color: #000000;
+$base-white: #ffffff;
+$base-gray: #f2f2f2;
+$base-black: #000000;
+$special-black: #111111;
+$special-grey: #666666;
+$special-dark-grey: #444444;
+$base-border-color: #d9d9d9;
+$special-border-color: #cdcdcd;
+$input-border-color: #e7e7e7;
 
 // bg-color
-$bg-color: rgba(104, 183, 56, 0.85);
-$bg-button: #68b738;
+$base-bg-color: #68b738;
+$base-gradient-color: rgba(104, 183, 56, 0.85);
 
 //fonts
-$lato: "Lato", "Arial", sans-serif;
-$oswald: "Oswald", "Arial", sans-serif;
+$font-lato: "Lato", "Arial", sans-serif;
+$font-oswald: "Oswald", "Arial", sans-serif;
+
+// break point
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
+//page padding

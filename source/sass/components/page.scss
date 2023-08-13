@@ -1,12 +1,11 @@
 .page {
   display: grid;
   min-block-size: 100%;
+  justify-content: center;
 }
 
 .page__body {
   display: grid;
   min-block-size: 100%;
   grid-template-rows: auto 1fr;
-  justify-items: center;
-  padding: 0 20px;
 }

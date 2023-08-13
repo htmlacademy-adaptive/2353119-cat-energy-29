@@ -1,12 +1,26 @@
 @use "../bootstrap.scss" as *;
 
-.additional-catalog__list {
-  @include reset-list;
+.additional-catalog__title {
+  margin: 0 0 36px;
 }
 
-.additional-product-card__title {
-  margin-top: 0;
+.additional-catalog__list {
+  @include reset-list;
 
-  @include font-title-card;
-  line-height: 16px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.additional-catalog__item {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 80px;
+    margin-bottom: 75px;
+  }
 }

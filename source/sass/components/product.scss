@@ -1,8 +1,0 @@
-@use "../bootstrap.scss" as *;
-
-.product-card__title {
-  margin-top: 0;
-
-  @include font-title-card;
-  line-height: 20px;
-}

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
@@ -13,17 +13,17 @@
     <div class="container">
       <div class="main-header__container">
         <a class="main-header__logo logo" href="#">
-          <img class="logo__image" src="img/logo/logo-mobile.png" width="33" height="38"
-            alt="Логотип Кэт энерджи">
+          <img class="logo__image" src="img/logo/logo-mobile.png" width="33" height="38" alt="Логотип Кэт энерджи">
         </a>
         <span class="main-header__logo-title logo-title">
           <img class="logo-title__image" src="img/logo/logo-title.png" width="101" height="18" alt="Cat energy.">
         </span>
-        <nav class="main-header__navigation main-navigation">
-          <button class="main-navigation__toggle" type="button">
+        <nav class="main-header__navigation site-navigation">
+          <button class="site-navigation__toggle" type="button">
+            <span class="site-navigation__toggle-line"></span>
             <span class="visually-hidden">Открыть меню.</span>
           </button>
-          <ul class="main-navigation__list site-navigation">
+          <ul class="site-navigation__list site-navigation__list--closed">
             <li class="site-navigation__item">
               <a class="site-navigation__link site-navigation__link--current" href="index.html">главная</a>
             </li>
@@ -40,13 +40,12 @@
   </header>
   <main class="main-container">
     <section class="main-container__item hero">
-      <div class="container">
-        <h1 class="hero__title title title--primary">Функциональное питание для котов</h1>
+      <div class="hero__container container">
+        <h1 class="hero__title title title--primary">Функциональное<br>питание для котов</h1>
         <p class="hero__subtitle">Занялся собой? Займись котом!</p>
         <img class="hero__product-image" src="img/hero/hero-product.png" width="280" height="270"
           alt="Корм для котов - Кэт энерджи c курицей.">
         <a class="hero__link-program button" href="form.html">подобрать программу</a>
-        <span class="hero__background"></span>
       </div>
     </section>
     <div class="container">
@@ -54,17 +53,17 @@
         <h2 class="visually-hidden">Выбор программы питания</h2>
         <ul class="program__list">
           <li class="program__item">
-            <div class="program-card">
-              <h3 class="program-card__title program-card__title--weight-loss title title--secondary">похудение</h3>
+            <div class="program-card program-card--weight-loss">
+              <h3 class="program-card__title title title--secondary">похудение</h3>
               <p class="program-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по
                 деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <a class="program-card__link" href="#">каталог slim</a>
             </div>
           </li>
           <li class="program__item">
-            <div class="program-card">
-              <h3 class="program-card__title program-card__title--weight-gain title title--secondary">набор массы</h3>
-              <p class="program-item__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
+            <div class="program-card program-card--weight-gain">
+              <h3 class="program-card__title title title--secondary">набор массы</h3>
+              <p class="program-card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
                 Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a class="program-card__link" href="#">каталог pro</a>
             </div>
@@ -101,22 +100,24 @@
           16
           часов в день.</p>
         <dl class="example__list indicator-list">
-          <div class="indicator-list__item indicator-item">
-            <dt class="indicator-item__key">5 кг</dt>
-            <dd class="indicator-item__value">снижение веса</dd>
+          <div class="indicator-list__item">
+            <dt class="indicator-list__key">5 кг</dt>
+            <dd class="indicator-list__value">снижение веса</dd>
           </div>
-          <div class="indicator-list__item indicator-item">
-            <dt class="indicator-item__key">60 дней</dt>
-            <dd class="indicator-item__value">затрачено времени</dd>
+          <div class="indicator-list__item">
+            <dt class="indicator-list__key">60 дней</dt>
+            <dd class="indicator-list__value">затрачено времени</dd>
           </div>
-          <div class="indicator-list__item indicator-item">
-            <dt class="indicator-item__key">Затраты на питание:</dt>
-            <dd class="indicator-item__value">15 000 руб.</dd>
+          <div class="indicator-list__item indicator-list__item--total">
+            <dt class="indicator-list__key">Затраты на питание:</dt>
+            <dd class="indicator-list__value">15 000 руб.</dd>
           </div>
         </dl>
         <div class="example__compare-slider compare-slider">
-          <img class="compare-slider__image" src="#" width="280" height="256" alt="Толстый кот.">
-          <img class="compare-slider__image" src="#" width="280" height="256" alt="Худой кот.">
+          <img class="compare-slider__image compare-slider__image--primary" src="http://placehold.it/280x256"" width="
+            280" height="256" alt="Толстый кот.">
+          <img class="compare-slider__image compare-slider__image--secondary" src="http://placehold.it/280x256"
+            width="280" height="256" alt="Худой кот.">
           <button class="compare-slider__curtain" type="button">
             <span class="visually-hidden">Шторка.</span>
           </button>
@@ -128,22 +129,23 @@
     <h2 class="visually-hidden">Контакты</h2>
     <article class="contacts">
       <div class="container">
-        <h3 class="contacts__title title">приглашаем к сотрудничеству дилеров!</h3>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <div class="contacts__item">
+          <h3 class="contacts__title title">приглашаем<br>к сотрудничеству<br>дилеров!</h3>
+          <address class="contacts__address">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</address>
+        </div>
       </div>
-      <div class="contacts__map location">
-        <iframe class="location__map"
+      <div class="contacts__location">
+        <iframe class="contacts__location-map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197732!2d30.320472476646085!3d59.93871916209431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1690749136755!5m2!1sru!2sru"
           width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <img class="location__image" src="#" width="320" height="362" alt="Расположение на карте.">
+        <img class="contacts__location-image" src="#" width="320" height="362" alt="Расположение на карте.">
       </div>
     </article>
     <div class="container container--bg-color_gray">
       <div class="main-footer__container">
-        <span class="logo-title">
-          <img class="logo-title__image logo-title__image--size_xl" src="img/logo/logo-title-xl.png" width="128"
-            height="24" alt="Кэт энерджи.">
+        <span class="logo-title logo-title--size_xl">
+          <img class="logo-title__image" src="img/logo/logo-title-xl.png" width="128" height="24" alt="Кэт энерджи.">
         </span>
         <ul class="social">
           <li class="social__item">
@@ -169,6 +171,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/site-navigation.js"></script>
 </body>
 
 </html>

@@ -1,15 +1,69 @@
 @use "../bootstrap.scss" as *;
 
 .program-form {
-  font-family: $oswald;
+  font-family: $font-oswald;
   font-size: 16px;
-  // font-style: normal;
-  // font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.program-form__header {
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+  }
+}
+
+.program-form__title {
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .program-form__description {
+  margin: 0;
   font-size: 14px;
-  color: $title-color;
+  color: $base-black;
+}
+
+.program-form__footer {
+  display: grid;
+  row-gap: 21px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 61px;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+    gap: 32px 80px;
+  }
+}
+
+.program-form__note {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    justify-self: start;
+  }
 }

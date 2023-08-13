@@ -4,6 +4,22 @@
   padding: 0 20px;
 
   &--bg-color_gray {
-    background-color: $main-gray;
+    background-color: $base-gray;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+
+  &--border {
+    border-bottom: 1px solid $base-border-color;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
   }
 }
