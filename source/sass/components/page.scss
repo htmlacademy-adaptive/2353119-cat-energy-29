@@ -1,3 +1,5 @@
+@use "../bootstrap.scss" as *;
+
 .page {
   display: grid;
   min-block-size: 100%;
@@ -9,3 +11,16 @@
   min-block-size: 100%;
   grid-template-rows: auto 1fr;
 }
+
+
+
+.page__header-inner {
+  width: 100vw;
+  margin-bottom: 27px;
+  border-bottom: 1px solid $base-border-color;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+

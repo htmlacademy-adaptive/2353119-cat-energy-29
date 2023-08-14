@@ -1,7 +1,8 @@
 @use "../bootstrap.scss" as *;
 
 .button {
-  display: block;
+  @include reset-button;
+
   padding: 10px;
   font-family: $font-oswald;
   font-size: 14px;
@@ -9,8 +10,6 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  border: none;
   color: $base-white;
   background-color: $base-bg-color;
-  cursor: pointer;
 }

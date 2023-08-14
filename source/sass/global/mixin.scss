@@ -6,6 +6,14 @@
   list-style: none;
 }
 
+@mixin reset-button {
+  display: block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
 @mixin font-title {
   font-family: $font-oswald;
   font-weight: 400;
@@ -27,16 +35,28 @@
 }
 
 @mixin break-point {
-  max-width: 540px;
+  max-width: 600px;
 
   @media (min-width: $tablet-width) {
     min-width: $tablet-width;
-    max-width: 960px;
+    max-width: 1220px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: $desktop-width;
     max-width: 1600px;
+  }
+}
+
+@mixin page-padding {
+  padding: 0 $mobile-padding;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 $tablet-padding;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 $desktop-padding;
   }
 }
 

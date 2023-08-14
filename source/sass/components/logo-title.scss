@@ -1,17 +1,10 @@
 @use "../bootstrap.scss" as *;
 
 .logo-title {
-  display: grid;
-  justify-content: center;
-  align-items: center;
   width: 101px;
 
   &--size_xl {
     width: 128px;
     justify-self: center;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
   }
 }
