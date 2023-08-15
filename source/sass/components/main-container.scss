@@ -4,16 +4,6 @@
   @include break-point;
 }
 
-.main-container__item {
-  &:not(:last-child) {
-    margin-bottom: 20px;
-
-    @media (min-width: $tablet-width) {
-      margin: 0;
-    }
-  }
-}
-
 .main-container__title {
   margin-bottom: 41px;
 

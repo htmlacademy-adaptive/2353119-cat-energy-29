@@ -35,7 +35,7 @@
 }
 
 @mixin break-point {
-  max-width: 600px;
+  // max-width: 600px;
 
   @media (min-width: $tablet-width) {
     min-width: $tablet-width;
@@ -49,14 +49,17 @@
 }
 
 @mixin page-padding {
-  padding: 0 $mobile-padding;
+  padding-left: $mobile-padding;
+  padding-right: $mobile-padding;
 
   @media (min-width: $tablet-width) {
-    padding: 0 $tablet-padding;
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 $desktop-padding;
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
   }
 }
 

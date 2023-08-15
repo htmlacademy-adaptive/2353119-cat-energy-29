@@ -1,5 +1,14 @@
 @use "../bootstrap.scss" as *;
 
+.site-navigation {
+  &--index a {
+    @media (min-width: $desktop-width) {
+      color: $base-white;
+      border-color: $base-white;
+    }
+  }
+}
+
 @media (max-width: $mobile-width-only) {
   .site-navigation--closed {
     display: none;

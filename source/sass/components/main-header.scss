@@ -4,27 +4,32 @@
   @include break-point;
   @include page-padding;
 
-  position: relative;
-  margin-top: 13px;
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+  padding-top: 13px;
+  padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     column-gap: 20px;
     align-items: center;
     justify-content: space-between;
-    margin: 25px 0 65px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 55px 0 74px;
+    padding-top: 55px;
   }
+
 }
 
 .main-header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     margin: 0;

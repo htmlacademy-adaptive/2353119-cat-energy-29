@@ -12,15 +12,51 @@
   grid-template-rows: auto 1fr;
 }
 
+.page__header {
 
+  &--inner {
+    width: 100vw;
+    margin-bottom: 27px;
+    border-bottom: 1px solid $base-border-color;
 
-.page__header-inner {
-  width: 100vw;
-  margin-bottom: 27px;
-  border-bottom: 1px solid $base-border-color;
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    border: none;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 74px;
   }
 }
 
+.page__header--index {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+
+  &::after {
+    grid-row: 1 / -1;
+    grid-column: -1 / -2;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-image:
+      linear-gradient($base-gradient-color, $base-gradient-color),
+      url("../img/hero/hero-cat-background-desktop.jpg"),
+      linear-gradient(to bottom, rgb(76, 75, 80), rgb(89, 79, 84));
+    background-repeat: no-repeat;
+    background-position: center, right bottom, left;
+    background-size: contain;
+    z-index: -2;
+    content: "";
+    }
+  }
+}
