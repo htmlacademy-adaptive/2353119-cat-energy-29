@@ -4,9 +4,10 @@
   @include reset-button;
 
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
   position: relative;
-  place-items: center;
-  width: 24px;
+  width: 33px;
   height: 22px;
 
   &--active .nav-toggle__line {
@@ -29,7 +30,7 @@
 .nav-toggle__line,
 .nav-toggle__line::before,
 .nav-toggle__line::after {
-  width: 100%;
+  width: 24px;
   height: 2px;
   background-color: $base-black;
   transition: 0.2s all linear;
@@ -39,7 +40,7 @@
   &::before,
   &::after {
     position: absolute;
-    left: 0;
+    right: 0;
     content: "";
   }
 

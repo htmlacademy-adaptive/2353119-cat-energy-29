@@ -3,13 +3,30 @@
 .button {
   @include reset-button;
 
-  padding: 10px;
+  padding: 10px 20px;
   font-family: $font-oswald;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: $base-white;
   background-color: $base-bg-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &--index {
+    padding: 8px 20px;
+    font-size: 14px;
+    line-height: 24px;
+
+    @media (min-width: $tablet-width) {
+      padding: 14px 20px;
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
 }

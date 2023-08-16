@@ -13,8 +13,7 @@
 }
 
 .page__header {
-
-  &--inner {
+  &--inner-page {
     width: 100vw;
     margin-bottom: 27px;
     border-bottom: 1px solid $base-border-color;
@@ -24,20 +23,31 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
-  }
-
   @media (min-width: $desktop-width) {
     margin-bottom: 74px;
   }
 }
 
+.page__header-container {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 29px;
+  }
+}
+
 .page__header--index {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
+    margin-bottom: 82px;
 
   &::after {
     grid-row: 1 / -1;

@@ -1,11 +1,18 @@
 @use "../bootstrap.scss" as *;
 
+.program {
+  @include page-padding;
+}
 
 .program__list {
   display: grid;
-  row-gap: 20px;
+  gap: 20px;
 
   @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;

@@ -60,7 +60,9 @@
   color: $base-black;
 
   @media (min-width: $tablet-width) {
-    padding: 10px 0;
+    padding: 8px 0;
+    font-size: 18px;
+    line-height: 24px;
 
     &--current {
       border-bottom: 2px solid $base-bg-color;
@@ -68,6 +70,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 8px 0;
+    font-size: 20px;
+    line-height: 24px;
   }
 }

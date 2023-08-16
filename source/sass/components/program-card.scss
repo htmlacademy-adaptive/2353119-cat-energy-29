@@ -1,39 +1,44 @@
 @use "../bootstrap.scss" as *;
 
+// перполнение переделать
 .program-card {
   display: grid;
-  grid-template-columns: 50px 1fr;
+  grid-template-columns: auto 1fr;
   align-items: center;
-  gap: 22px 20px;
-  padding: 24px 20px 7px;
+  position: relative;
+  padding: 24px 20px 18px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 200px;
-    gap: 0 53px;
-    padding: 77px 63px 53px 52px;
+    grid-template-columns: 1fr auto;
+    padding: 77px 63px 63px 52px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 100px 1fr;
-    gap: 0 43px;
+    grid-template-columns: auto 1fr;
     width: 570px;
+    padding: 47px 52px 59px;
+
   }
 
   &::before {
-    content: "";
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    align-self: flex-start;
     display: block;
     width: 50px;
     height: 50px;
+    margin: 0 20px 22px 0;
     border-radius: 50%;
     background-color: $base-bg-color;
+    content: "";
 
     @media (min-width: $tablet-width) {
       grid-column: 2 / 3;
       grid-row: 1 / 4;
       width: 200px;
       height: 200px;
+      margin: 0;
+      align-self: center;
     }
 
     @media (min-width: $desktop-width) {
@@ -41,39 +46,86 @@
       grid-row: 1 / 2;
       width: 100px;
       height: 100px;
-      margin-bottom: 39px;
+      margin: 0 62px 40px 0;
     }
   }
 
-  // &::after {
-  //   grid-column: 1 / 2;
-  //   grid-row: 1 / 2;
-  //   display: block;
-  //   width: 100%;
-  //   height: 100%;
-  //   background-repeat: no-repeat;
-  //   background-position: center;
-  //   background-size: cover;
-  //   background-clip: border-box;
-  //   content: "";
-  // }
+  &::after {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
 
-  // &--weight-loss::after {
-  //   background-image: url("../img/program/weight-loss.svg");
-  // }
+    @media (min-width: $tablet-width) {
+      grid-column: 2 / 3;
+      grid-row: 1 / 4;
+    }
 
-  // &--weight-gain::after {
-  //   background-image: url("../img/program/weight-gain.svg");
-  // }
+    @media (min-width: $desktop-width) {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+  }
+
+  &--weight-loss::after {
+    top: -3px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/program/weight-loss.svg");
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 140px;
+      height: 194px;
+      top: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 70px;
+      height: 97px;
+      top: -5px;
+      left: 50px;
+    }
+  }
+
+  &--weight-gain::after {
+    top: 11px;
+    left: -7px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/program/weight-gain.svg");
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 286px;
+      height: 112px;
+      top: 50%;
+      left: -43px;
+      transform: translateY(-50%);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 134px;
+      height: 56px;
+      top: 50px;
+      left: -19px;
+    }
+  }
 }
 
 .program-card__title {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
-  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -84,15 +136,32 @@
 
 .program-card__description {
   grid-column: 1 / -1;
-  margin: 0;
+  position: relative;
+  margin: 0 0 38px;
+
+  &::after {
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: -23px;
+    background-color: $base-border-color;
+    content: "";
+  }
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
+    margin: 0 53px 56px 0;
+    border: none;
+
+    &::after {
+      content: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
-    margin-bottom: 23px;
+    margin: 0 0 27px;
   }
 }
 
@@ -101,14 +170,13 @@
   display: flex;
   align-items: center;
   column-gap: 15px;
-  padding: 15px 0;
+  padding: 4px 0;
   font-family: $font-oswald;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
   color: $base-black;
-  border-top: 1px solid #d9d9d9;
 
   &::after {
     content: "";
@@ -119,10 +187,13 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
-    border: none;
+    font-size: 20px;
+    line-height: 1em;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
+    line-height: 30px;
   }
 }

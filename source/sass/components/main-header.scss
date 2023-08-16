@@ -4,6 +4,8 @@
   @include break-point;
   @include page-padding;
 
+  position: relative;
+
   grid-row: 1 / 2;
   grid-column: 1 / -1;
   padding-top: 13px;
@@ -11,19 +13,16 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    column-gap: 20px;
+    column-gap: 94px;
     align-items: center;
-    justify-content: space-between;
-  }
-
-  @media (min-width: $tablet-width) {
     padding-top: 25px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 55px;
+    justify-content: space-between;
   }
-
 }
 
 .main-header__container {
@@ -45,12 +44,6 @@
 .main-header__toggle {
   @media (min-width: $tablet-width) {
     display: none;
-  }
-}
-
-.main-header__navigation {
-  @media (min-width: $tablet-width) {
-    align-self: flex-end;
   }
 }
 
