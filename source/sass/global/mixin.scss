@@ -44,22 +44,22 @@
 
   @media (min-width: $desktop-width) {
     min-width: $desktop-width;
-    max-width: 1600px;
+    max-width: $desktop-width;
   }
 }
 
 @mixin page-padding {
-  padding-left: $mobile-padding;
-  padding-right: $mobile-padding;
+  padding-left: $mobile-edges;
+  padding-right: $mobile-edges;
 
   @media (min-width: $tablet-width) {
-    padding-left: $tablet-padding;
-    padding-right: $tablet-padding;
+    padding-left: $tablet-edges;
+    padding-right: $tablet-edges;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: $desktop-padding;
-    padding-right: $desktop-padding;
+    padding-left: $desktop-edges;
+    padding-right: $desktop-edges;
   }
 }
 
@@ -67,4 +67,20 @@
 @mixin padding-reset {
   margin: 0 -20px;
   padding: 0 20px;
+}
+
+
+@mixin page-margin {
+  margin-left: $mobile-edges;
+  margin-right: $mobile-edges;
+
+  @media (min-width: $tablet-width) {
+    margin-left: $tablet-edges;
+    margin-right: $tablet-edges;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: $desktop-edges;
+    margin-right: $desktop-edges;
+  }
 }

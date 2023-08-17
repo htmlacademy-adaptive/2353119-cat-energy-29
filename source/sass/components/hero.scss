@@ -2,7 +2,7 @@
 
 .hero {
   display: grid;
-  grid-template-columns: $mobile-padding 1fr $mobile-padding;
+  grid-template-columns: $mobile-edges 1fr $mobile-edges;
   grid-template-rows: 27px;
   margin-bottom: 20px;
 
@@ -25,7 +25,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: $tablet-padding 1fr $tablet-padding;
+    grid-template-columns: $tablet-edges 1fr $tablet-edges;
     grid-template-rows: auto;
     margin: 0;
 
@@ -37,7 +37,7 @@
   @media (min-width: $desktop-width) {
     grid-row: 2 / 3;
     grid-column: 1 / -1;
-    grid-template-columns: $desktop-padding 1fr 1fr $desktop-padding;
+    grid-template-columns: $desktop-edges 1fr 1fr $desktop-edges;
     grid-template-rows: 81px;
     padding-bottom: 52px;
   }

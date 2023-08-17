@@ -1,9 +1,5 @@
 @use "../bootstrap.scss" as *;
 
-.program {
-  @include page-padding;
-}
-
 .program__list {
   display: grid;
   gap: 20px;
