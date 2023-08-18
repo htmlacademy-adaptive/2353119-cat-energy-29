@@ -12,7 +12,6 @@
   }
 }
 
-
 .main-container__program {
   @include page-margin;
 
@@ -28,8 +27,6 @@
 }
 
 .main-container__instructions {
-  @include page-margin;
-
   margin-bottom: 49px;
 
   @media (min-width: $tablet-width) {
@@ -37,6 +34,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 69px;
+    margin-bottom: 82px;
+  }
+}
+
+.main-container__example {
+  padding: 25px 0 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 101px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 75px;
   }
 }

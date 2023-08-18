@@ -4,14 +4,17 @@
   position: relative;
   width: 280px;
   height: 256px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
 }
 
 .compare-slider__image {
   display: block;
-  position: relative;
-  top: 0;
-  left: 0;
-
+  width: 100%;
+  height: auto;
 
   &--secondary {
     position: absolute;
@@ -21,6 +24,10 @@
 }
 
 .compare-slider__curtain {
+  @include button-reset;
+
+  display: flex;
+  place-items: center;
   width: 4px;
   position: absolute;
   top: 0;
@@ -29,6 +36,11 @@
   transform: translateX(50%);
   border-radius: 2px;
   background-color: $special-grey;
+  z-index: 1;
+}
 
-  @include button-reset;
+.compare-slider__thumb {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }

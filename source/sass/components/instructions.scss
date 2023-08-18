@@ -1,11 +1,19 @@
 @use "../bootstrap.scss" as *;
 
 .instructions {
-  margin-bottom: 49px;
+  @media (min-width: $tablet-width) {
+    padding-bottom: 60px;
+    border-bottom: 1px solid $section-border-color;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 69px;
+    padding: 0;
+    border: none;
   }
+}
+
+.instructions__container {
+  @include page-margin;
 }
 
 .instructions__title {
@@ -27,8 +35,8 @@
 
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: repeat(auto-fill, 300px);
-    gap: 134px 84px;
+    grid-template-columns: repeat(auto-fill, 280px);
+    gap: 90px 104px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,6 +55,7 @@
     grid-template-columns: auto 1fr;
     gap: 31px 20px;
     counter-increment: item;
+    padding-bottom: 44px;
 
     &::after {
       grid-column: 2 / 3;
@@ -101,11 +110,10 @@
 .instructions__description {
   margin: 0;
   position: relative;
-  width: 250px;
-
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
+    width: 250px;
   }
 }

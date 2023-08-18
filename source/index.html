@@ -47,9 +47,7 @@
       <a class="hero__link-program button button--index" href="form.html">подобрать программу</a>
     </section>
   </header>
-
   <main class="main-container">
-
     <section class="main-container__program program">
       <h2 class="visually-hidden">Выбор программы питания</h2>
       <ul class="program__list">
@@ -71,62 +69,76 @@
         </li>
       </ul>
     </section>
-
     <section class="main-container__instructions instructions">
-      <h2 class="instructions__title title title--primary">Как это работает</h2>
-      <ul class="instructions__list">
-        <li class="instructions__item instructions__item--icon_leaf">
-          <p class="instructions__description">Функциональное питание содержит только полезные питательные
-            вещества.</p>
-        </li>
-        <li class="instructions__item instructions__item--icon_powder">
-          <p class="instructions__description">Выпускается в виде порошка, который нужно лишь залить кипятком и
-            готово.</p>
-        </li>
-        <li class="instructions__item instructions__item--icon_eat">
-          <p class="instructions__description">Замените один-два приема обычной еды на наше функциональное питание.
-          </p>
-        </li>
-        <li class="instructions__item instructions__item--icon_scales">
-          <p class="instructions__description">Уже через месяц наслаждайтесь изменениями к лучшему
-            вашего&nbsp;питомца!</p>
-        </li>
-      </ul>
+      <div class="instructions__container">
+        <h2 class="instructions__title title title--primary">Как это работает</h2>
+        <ul class="instructions__list">
+          <li class="instructions__item instructions__item--icon_leaf">
+            <p class="instructions__description">Функциональное питание содержит только полезные питательные
+              вещества.</p>
+          </li>
+          <li class="instructions__item instructions__item--icon_powder">
+            <p class="instructions__description">Выпускается в виде порошка, который нужно лишь залить кипятком и
+              готово.</p>
+          </li>
+          <li class="instructions__item instructions__item--icon_eat">
+            <p class="instructions__description">Замените один-два приема обычной еды на наше функциональное питание.
+            </p>
+          </li>
+          <li class="instructions__item instructions__item--icon_scales">
+            <p class="instructions__description">Уже через месяц наслаждайтесь изменениями к лучшему
+              вашего&nbsp;питомца!</p>
+          </li>
+        </ul>
+      </div>
     </section>
-
-    <!-- --bg-color_gray превешать на section -->
-    <div class="container container--bg-color_gray">
-      <section class="main-container__example example">
-        <h2 class="example__title title title--primary">Живой пример</h2>
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
-          16
-          часов в день.</p>
-        <dl class="example__list indicator-list">
-          <div class="indicator-list__item">
-            <dt class="indicator-list__key">5 кг</dt>
-            <dd class="indicator-list__value">снижение веса</dd>
+    <section class="main-container__example example">
+      <div class="example__container">
+        <div class="example__wrapper example__wrapper--grid_desktop">
+          <h2 class="example__title title title--primary">Живой пример</h2>
+          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+            Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
+            по
+            16
+            часов в день.</p>
+          <div class="example__wrapper example__wrapper--grid_tablet">
+            <dl class="example__list indicators">
+              <div class="indicators__item">
+                <dt class="indicators__key">5 кг</dt>
+                <dd class="indicators__value">снижение веса</dd>
+              </div>
+              <div class="indicators__item">
+                <dt class="indicators__key">60 дней</dt>
+                <dd class="indicators__value">затрачено времени</dd>
+              </div>
+            </dl>
+            <dl class="example__list expenses">
+              <dt class="expenses__key">Затраты на питание:</dt>
+              <dd class="expenses__value">15 000 руб.</dd>
+            </dl>
           </div>
-          <div class="indicator-list__item">
-            <dt class="indicator-list__key">60 дней</dt>
-            <dd class="indicator-list__value">затрачено времени</dd>
+        </div>
+        <div class="example__compare-slider compare-slider" data-compare-slider>
+          <div data-cat-fat>
+            <img class="compare-slider__image compare-slider__image--primary" src="http://placehold.it/280x256"" width="
+              280" height="256" alt="Толстый кот.">
           </div>
-          <div class="indicator-list__item indicator-list__item--total">
-            <dt class="indicator-list__key">Затраты на питание:</dt>
-            <dd class="indicator-list__value">15 000 руб.</dd>
-          </div>
-        </dl>
-        <div class="example__compare-slider compare-slider">
-          <img class="compare-slider__image compare-slider__image--primary" src="http://placehold.it/280x256"" width="
-            280" height="256" alt="Толстый кот.">
-          <img class="compare-slider__image compare-slider__image--secondary" src="http://placehold.it/280x256"
-            width="280" height="256" alt="Худой кот.">
-          <button class="compare-slider__curtain" type="button">
+          <button class="compare-slider__curtain" data-slider-curtain type="button">
+            <svg class="compare-slider__thumb" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+              width="40" height="40" fill="none" viewBox="0 0 40 40">
+              <rect width="38" height="38" x="1" y="1" fill="#fff" rx="19" />
+              <path fill="#666" d="m16 11-8 9 8 9V11ZM32 20l-8-9v18l8-9Z" />
+              <rect width="38" height="38" x="1" y="1" stroke="#666" stroke-width="2" rx="19" />
+            </svg>
             <span class="visually-hidden">Шторка.</span>
           </button>
+          <div data-cat-thin>
+            <img class="compare-slider__image compare-slider__image--secondary" src="http://placehold.it/280x256"
+              width="280" height="256" alt="Худой кот.">
+          </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
   <footer class="main-footer">
     <h2 class="visually-hidden">Контакты</h2>
