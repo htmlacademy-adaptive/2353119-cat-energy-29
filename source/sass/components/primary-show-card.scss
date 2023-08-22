@@ -1,0 +1,83 @@
+@use "../bootstrap.scss" as *;
+
+.primary-show-card {
+  display: grid;
+  padding-top: 5px;
+  text-align: center;
+
+
+  &::before {
+    content: "";
+    justify-self: center;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 24px;
+    background-image: url("../img/icon/plus.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    padding: 50px 37px 40px;
+    outline: 2px solid $base-gray;
+    background: none;
+
+    &::before {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+.primary-show-card__container {
+  justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 90px;
+  }
+}
+
+.primary-show-card__title {
+  @include font-title-card;
+
+  margin: 0 0 8px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 23px;
+    font-size: 20px;
+    margin-bottom: 23px;
+  }
+}
+
+.primary-show-card__description {
+  margin: 0 0 22px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.primary-show-card__button {
+  background-color: $base-gray;
+  color: $special-dark-grey;
+}

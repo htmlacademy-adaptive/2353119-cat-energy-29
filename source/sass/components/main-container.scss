@@ -4,14 +4,6 @@
   @include break-point;
 }
 
-.main-container__title {
-  margin-bottom: 41px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 84px;
-  }
-}
-
 .main-container__program {
   @include page-margin;
 

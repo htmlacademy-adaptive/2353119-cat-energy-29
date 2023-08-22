@@ -26,16 +26,9 @@
   text-transform: uppercase;
 }
 
-
-@mixin button-reset {
-  display: block;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-
 @mixin break-point {
-  // max-width: 600px;
+  min-width: 250px;
+  max-width: 500px;
 
   @media (min-width: $tablet-width) {
     min-width: $tablet-width;

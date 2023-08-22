@@ -1,19 +1,8 @@
 @use "../bootstrap.scss" as *;
 
-.promo {
-  padding: 35px 0;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    margin-bottom: 75px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
-  }
-}
-
 .promo__container {
+  @include page-margin;
+
   display: grid;
   justify-items: center;
   align-items: center;
@@ -35,25 +24,33 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-
-    @media (min-width: $tablet-width) {
-      margin: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 46px;
-    }
   }
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding: 57px 125px 60px 77px;
+    align-items: center;
+    min-height: 200px;
+    padding: 40px 125px 40px 77px;
+    background-position: center, center -324px;
+
+    &::before {
+      width: 80px;
+      height: 82px;
+      margin: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
+    min-height: 288px;
     padding: 56px 42px 43px;
+    margin: 0;
+
+    &::before {
+      height: 83px;
+      margin-bottom: 46px;
+    }
   }
 }
 

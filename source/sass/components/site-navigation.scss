@@ -1,6 +1,7 @@
 @use "../bootstrap.scss" as *;
 
 .site-navigation {
+  //спросить
   &--index a {
     @media (min-width: $desktop-width) {
       color: $base-white;
@@ -15,10 +16,10 @@
   }
 
   .site-navigation--opened {
+    width: 100%;
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 100%;
     transform: translateY(100%);
     background-color: $base-white;
     z-index: 1;
@@ -60,12 +61,16 @@
   color: $base-black;
 
   @media (min-width: $tablet-width) {
-    padding: 8px 0;
+    padding: 8px 0 8px;
     font-size: 18px;
     line-height: 24px;
 
     &--current {
-      border-bottom: 2px solid $base-bg-color;
+      text-decoration: underline;
+      text-underline-position: under;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 7px;
+      text-decoration-color: $base-bg-color;
     }
   }
 

@@ -14,6 +14,10 @@
   column-gap: 15px;
   padding: 26px 0;
 
+  &--inner-page {
+    background-color: $base-gray;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 60px 40px;
   }
@@ -67,12 +71,12 @@
 
 .contacts__location-map {
   display: block;
-  position: relative;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .contacts__location-image {
