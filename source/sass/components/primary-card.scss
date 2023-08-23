@@ -15,7 +15,7 @@
 
 .primary-card__container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;

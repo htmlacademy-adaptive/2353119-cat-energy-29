@@ -2,6 +2,23 @@
 
 .data-owner__title {
   margin-bottom: 35px;
+
+  &::after {
+    top: 16px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+
+    & br {
+      display: none;
+    }
+
+    &::after,
+    &::before {
+      top: 22px;
+    }
+  }
 }
 
 .data-owner__field {
@@ -12,12 +29,34 @@
       margin-bottom: 20px;
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desktop-width) {
       margin: 0;
     }
   }
 }
 
+.data-owner__input-wrapper {
+  display: grid;
+  position: relative;
+}
+
 .data-owner__input {
-  padding: 11px 40px 11px 20px;
+  min-height: 45px;
+  padding: 14px 35px 13px 15px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 52px;
+    padding: 11px 35px 11px 20px;
+  }
+}
+
+.data-owner__input-icon {
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  transform: translateY(-50%);
+
+  @media (min-width: $tablet-width) {
+    right: 14px;
+  }
 }

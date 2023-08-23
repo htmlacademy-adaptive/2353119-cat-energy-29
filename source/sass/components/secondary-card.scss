@@ -3,7 +3,7 @@
 .secondary-card {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     align-items: baseline;
     row-gap: 22px;
   }

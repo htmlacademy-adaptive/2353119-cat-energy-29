@@ -3,21 +3,32 @@
 .details__title {
   margin-bottom: 34px;
 
+  &::after {
+    top: 15px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 57px;
+
+    &::after,
+    &::before {
+      top: 22px;
+    }
   }
 }
 
 .details__list {
+  display: grid;
+  row-gap: 12px;
+
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 32px 61px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
-    display: flex;
-    column-gap: 80px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 73px;
   }
 }

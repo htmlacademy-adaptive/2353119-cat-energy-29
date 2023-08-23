@@ -1,11 +1,6 @@
 @use "../bootstrap.scss" as *;
 
 .program-form {
-  font-family: $font-oswald;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-
   @media (min-width: $tablet-width) {
     padding: 0 40px;
   }
@@ -16,11 +11,17 @@
 }
 
 .program-form__header {
+  @include page-margin;
+
   margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 66px;
   }
+}
+
+.program-form__main {
+  margin-bottom: 34px;
 }
 
 .program-form__title {
@@ -37,18 +38,26 @@
 
 .program-form__description {
   margin: 0;
-  font-size: 14px;
+  font-family: $font-oswald;
+  text-transform: uppercase;
   color: $base-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .program-form__footer {
+  @include page-margin;
+
   display: grid;
   row-gap: 21px;
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 32px 61px;
     align-items: center;
     margin-bottom: 60px;
@@ -61,9 +70,12 @@
 }
 
 .program-form__note {
+  font-size: 14px;
+  line-height: 16px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     justify-self: start;
+    font-size: 16px;
   }
 }

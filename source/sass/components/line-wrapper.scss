@@ -1,0 +1,26 @@
+@use "../bootstrap.scss" as *;
+
+.line-wrapper {
+  display: grid;
+  grid-template-columns: auto auto minmax($mobile-edges, 1fr);
+  align-content: baseline;
+  column-gap: 20px;
+
+  &::after,
+  &::before {
+    position: relative;
+    align-self: start;
+    height: 2px;
+    background-color: $base-bg-color;
+    content: "";
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: minmax($tablet-edges, auto) auto minmax($tablet-edges, 1fr);
+    column-gap: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: minmax(70px, auto) auto minmax(70px, 1fr);
+  }
+}
