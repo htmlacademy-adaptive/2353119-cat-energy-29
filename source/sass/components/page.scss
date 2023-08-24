@@ -13,8 +13,51 @@
 }
 
 .page__header {
+  margin-bottom: 27px;
+  border-bottom: 1px solid $base-border-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+    border: none;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 74px;
+  }
+
+  &--index-page {
+    margin-bottom: 20px;
+    border: none;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto);
+      margin-bottom: 82px;
+
+      &::after {
+        grid-row: 1 / -1;
+        grid-column: -1 / -2;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-image:
+          linear-gradient($base-gradient-color, $base-gradient-color),
+          url("../img/hero/hero-cat-background-desktop.jpg"),
+          linear-gradient(to bottom, rgb(76, 75, 80), rgb(89, 79, 84));
+        background-repeat: no-repeat;
+        background-position: center, right bottom, left;
+        background-size: contain;
+        z-index: -2;
+        content: "";
+      }
+    }
   }
 }
 
@@ -28,54 +71,8 @@
   }
 }
 
-.page__header--index {
-  @media (min-width: $tablet-width) {
-    margin: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    margin-bottom: 82px;
-
-    &::after {
-      grid-row: 1 / -1;
-      grid-column: -1 / -2;
-      display: block;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      right: 0;
-      background-image:
-        linear-gradient($base-gradient-color, $base-gradient-color),
-        url("../img/hero/hero-cat-background-desktop.jpg"),
-        linear-gradient(to bottom, rgb(76, 75, 80), rgb(89, 79, 84));
-      background-repeat: no-repeat;
-      background-position: center, right bottom, left;
-      background-size: contain;
-      z-index: -2;
-      content: "";
-    }
-  }
-}
-
-.page__header--inner-page {
-  width: 100vw;
-  margin-bottom: 27px;
-  border-bottom: 1px solid $base-border-color;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
-    border: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 74px;
-  }
-}
-
 .page__inner {
+  width: 100vw;
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {

@@ -2,8 +2,15 @@
 
 .main-footer {
   @include break-point;
+  background-color: $base-gray;
+}
 
-  &--inner-page {
-    background-color: $base-gray;
+.main-footer__container {
+  &--index-page {
+    background: $base-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
   }
 }

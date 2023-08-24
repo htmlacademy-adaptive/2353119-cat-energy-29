@@ -1,10 +1,6 @@
 @use "../bootstrap.scss" as *;
 
 .social {
-  background-color: $base-gray;
-}
-
-.social__container {
   @include page-margin;
 
   display: grid;
