@@ -4,6 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
@@ -19,9 +23,7 @@
             <img class="logo__image" src="img/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
           </picture>
         </a>
-        <span class="main-header__logo-title logo-title">
-          <img class="logo-title__image" src="img/logo/logo-title.svg" width="101" height="18" alt="Cat energy.">
-        </span>
+        <img class="main-header__logo-title logo-title" src="img/logo/logo-title.svg" width="101" height="18" alt="Cat energy.">
         <button class="main-header__toggle nav-toggle" type="button">
           <span class="nav-toggle__line"></span>
           <span class="visually-hidden">Открыть меню.</span>
@@ -131,7 +133,7 @@
           <div class="compare-slider__image-container compare-slider__image-container--primary" data-cat-fat style="clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);">
             <picture>
               <source media="(min-width: 768px)" srcset="img/slider/thin-cat-tablet@1x.png 1x, img/slider/thin-cat-tablet@2x.png 2x" type="image/png" width="560" height="512">
-              <img src="img/slider/thin-cat-mobile@1x.png" srcset="img/slider/thin-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот.">
+              <img class="compare-slider__image" src="img/slider/thin-cat-mobile@1x.png" srcset="img/slider/thin-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот.">
             </picture>
           </div>
           <button class="compare-slider__curtain" data-slider-curtain type="button">
@@ -146,7 +148,7 @@
           <div class="compare-slider__image-container compare-slider__image-container--secondary" data-cat-thin style="clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);">
             <picture>
               <source media="(min-width: 768px)" srcset="img/slider/fat-cat-tablet@1x.png 1x, img/slider/fat-cat-tablet@2x.png 2x" type="image/png" width="560" height="512">
-              <img src="img/slider/fat-cat-mobile@1x.png" srcset="img/slider/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Худой кот.">
+              <img class="compare-slider__image" src="img/slider/fat-cat-mobile@1x.png" srcset="img/slider/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Худой кот.">
             </picture>
           </div>
         </div>
@@ -177,9 +179,7 @@
     </div>
     <div class="main-footer__container">
       <div class="social">
-        <span class="logo-title logo-title--size_xl">
-          <img class="logo-title__image" src="img/logo/logo-title.svg" width="128" height="24" alt="Кэт энерджи.">
-        </span>
+        <img class="logo-title logo-title--size_xl" src="img/logo/logo-title.svg" width="128" height="24" alt="Кэт энерджи.">
         <ul class="social-list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="#">

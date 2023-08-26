@@ -12,22 +12,27 @@
 }
 
 .compare-slider__image-container {
-  display: block;
-  width: 100%;
-  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
 
   &--primary {
-    position: absolute;
-    top: 0;
-    left: 0;
     z-index: 2;
   }
 
   &--secondary {
-    position: absolute;
-    top: 0;
-    left: 0;
     z-index: 1;
+  }
+}
+
+.compare-slider__image {
+  display: block;
+  width: 280px;
+  height: 256px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
   }
 }
 

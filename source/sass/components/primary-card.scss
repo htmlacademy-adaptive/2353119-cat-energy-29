@@ -42,22 +42,25 @@
 
 .primary-card__image-link {
   place-self: center;
+
+  @media (min-width: $tablet-width) {
+    margin: -71px 0 0;
+  }
+}
+
+.primary-card__image {
+  display: block;
   width: 140px;
   height: 107px;
 
   @media (min-width: $tablet-width) {
     width: 200px;
     height: 210px;
-    margin: -71px 0 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 169px;
   }
-}
-
-.primary-card__image {
-  display: block;
 }
 
 .primary-card__title {
