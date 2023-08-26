@@ -1,6 +1,17 @@
 @use "../bootstrap.scss" as *;
 
 .logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo__image {
+  display: block;
   width: 33px;
   height: 38px;
 

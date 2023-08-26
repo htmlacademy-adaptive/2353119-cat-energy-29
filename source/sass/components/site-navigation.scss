@@ -1,7 +1,6 @@
 @use "../bootstrap.scss" as *;
 
 .site-navigation {
-  //спросить
   &--index a {
     @media (min-width: $desktop-width) {
       color: $base-white;
