@@ -1,39 +1,38 @@
 @use "../bootstrap.scss" as *;
 
-.additional-product-card {
+.secondary-card {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: baseline;
+    row-gap: 22px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr 192px;
+    grid-template-columns: 1fr 1fr min(244px);
     column-gap: 40px;
   }
 }
 
-.additional-product-card__title {
-  margin: 0 0 13px;
-
+.secondary-card__title {
   @include font-title-card;
-  line-height: 16px;
+
+  margin: 0 0 11px;
+  line-height: 1em;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-  }
-
-  @media (min-width: $desktop-width) {
+    font-size: 20px;
     margin: 0;
   }
 }
 
-.additional-product-card__property {
+.secondary-card__property {
   display: flex;
   column-gap: 20px;
   justify-content: space-between;
-  margin: 0 0 15px;
+  margin: 0 0 13px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
@@ -41,14 +40,11 @@
     display: grid;
     grid-template-columns: 1fr auto;
     column-gap: 49px;
-  }
-
-  @media (min-width: $desktop-width) {
     margin: 0;
   }
 }
 
-.additional-product-card__description {
+.secondary-card__description {
   @media (min-width: $tablet-width) {
     text-align: end;
   }
@@ -58,7 +54,7 @@
   }
 }
 
-.additional-product-card__price {
+.secondary-card__price {
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -71,10 +67,11 @@
   }
 }
 
-.additional-product-card__link {
-  grid-column: 1 / -1;
-  grid-row: 2 / 3;
-
+.secondary-card__link {
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 3 / 4;

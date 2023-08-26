@@ -1,0 +1,54 @@
+@use "../bootstrap.scss" as *;
+
+.nav-toggle {
+  @include reset-button;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  width: 33px;
+  height: 22px;
+
+  &--active .nav-toggle__line {
+    background-color: transparent;
+
+    &::before {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    &::after {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.nav-toggle__line,
+.nav-toggle__line::before,
+.nav-toggle__line::after {
+  width: 24px;
+  height: 2px;
+  background-color: $base-black;
+  transition: 0.2s all linear;
+}
+
+.nav-toggle__line {
+  &::before,
+  &::after {
+    position: absolute;
+    right: 0;
+    content: "";
+  }
+
+  &::before {
+    top: 2px;
+  }
+
+  &::after {
+    bottom: 2px;
+  }
+}

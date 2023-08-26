@@ -1,0 +1,48 @@
+@use "../bootstrap.scss" as *;
+
+.primary-catalog__list {
+  @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    @include page-margin;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 324px);
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(auto-fill, 245px);
+    gap: 63px 80px;
+  }
+}
+
+.primary-catalog__item {
+  min-height: 209px;
+  padding: 20px 0 24px;
+  border-top: 1px solid $card-border-color;
+  border-bottom: 1px solid $card-border-color;
+
+  &:not(:first-child) {
+    border-top: none;
+  }
+
+  &--show {
+    min-height: 207px;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 81px 0 0;
+  }
+}
+
+.primary-catalog__card {
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0 37px 40px;
+    background-color: $base-gray;
+  }
+}

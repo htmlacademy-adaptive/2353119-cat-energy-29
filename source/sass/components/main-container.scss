@@ -4,20 +4,40 @@
   @include break-point;
 }
 
-.main-container__item {
-  &:not(:last-child) {
-    margin-bottom: 20px;
+.main-container__program {
+  @include page-margin;
 
-    @media (min-width: $tablet-width) {
-      margin: 0;
-    }
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
   }
 }
 
-.main-container__title {
-  margin-bottom: 41px;
+.main-container__instructions {
+  margin-bottom: 49px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 84px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+  }
+}
+
+.main-container__example {
+  padding: 25px 0 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 101px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 75px;
   }
 }

@@ -3,3 +3,25 @@
 .inner-container {
   @include break-point;
 }
+
+.inner-container__title {
+  @include page-margin;
+
+  margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 84px;
+  }
+}
+
+.inner-container__primary-catalog {
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
+}

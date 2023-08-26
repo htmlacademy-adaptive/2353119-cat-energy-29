@@ -1,9 +1,21 @@
 @use "../bootstrap.scss" as *;
 
 .form__fieldset {
+  @include page-margin;
+
+  font-family: $font-oswald;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1em;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
     align-items: center;
   }
@@ -57,11 +69,19 @@
   }
 }
 
+.form__legend {
+  text-transform: none;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    @include full-width-vw;
+
+    line-height: 1em;
+  }
+}
+
 .form__list {
   @include reset-list;
-
-  display: grid;
-  row-gap: 13px;
 }
 
 
@@ -69,7 +89,7 @@
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  column-gap: 13px;
+  column-gap: 14px;
 
   &--radio,
   &--checkbox {
@@ -77,20 +97,30 @@
   }
 
   &--comment {
-    @include padding-reset;
-
-    padding: 15px 35px;
     grid-template-columns: 1fr;
-    border-top: 1px solid $input-border-color;
-    border-bottom: 1px solid $input-border-color;
+    align-items: start;
+    row-gap: 10px;
+    min-height: 150px;
+    padding: 14px;
+    outline: 1px solid $input-border-color;
+  }
 
-    @media (min-width: $tablet-width) {
-      margin: 0;
-      padding: 11px 20px;
-      border: 1px solid $input-border-color;
+  @media (min-width: $tablet-width) {
+    &--radio,
+    &--checkbox {
+      column-gap: 20px;
     }
 
-    @media (min-width: $desktop-width) {
+    &--comment {
+      min-height: 175px;
+      margin: 0;
+      padding: 11px 20px;
+      line-height: 30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--comment {
       grid-column: 1 / -1;
       padding: 9px 20px;
     }
@@ -103,12 +133,12 @@
   line-height: inherit;
   text-transform: uppercase;
   color: inherit;
-  border: 1px solid $input-border-color;
+  border: none;
+  outline: 1px solid $input-border-color;
 
   &--textarea {
     resize: none;
-    border: none;
-    min-height: 150px;
+    outline: none;
   }
 }
 
@@ -133,14 +163,14 @@
 
   &::after {
     display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     content: "";
   }
 
   &--radio::after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
     width: 13px;
     height: 13px;
     background-color: $base-bg-color;
@@ -148,9 +178,23 @@
   }
 
   &--checkbox::after {
+    width: 26px;
+    height: 26px;
     background-image: url("");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+
+    &::after {
+      width: 18px;
+      height: 18px;
+    }
   }
 }
