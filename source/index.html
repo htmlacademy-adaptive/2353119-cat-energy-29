@@ -4,6 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
@@ -12,12 +16,14 @@
   <header class="page__header page__header--index-page">
     <div class="page__header-container main-header main-header--nojs">
       <div class="main-header__container">
-        <a class="main-header__logo logo" href="#">
-          <img class="logo__image" src="img/logo/logo-mobile.png" width="33" height="38" alt="Логотип Кэт энерджи">
+        <a class="main-header__logo logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-tablet.svg" type="image/svg+xml" width="202" height="59">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" type="image/svg+xml" width="174" height="50">
+            <img class="logo__image" src="img/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+          </picture>
         </a>
-        <span class="main-header__logo-title logo-title">
-          <img class="logo-title__image" src="img/logo/logo-title.png" width="101" height="18" alt="Cat energy.">
-        </span>
+        <img class="main-header__logo-title logo-title" src="img/logo/logo-title.svg" width="101" height="18" alt="Cat energy.">
         <button class="main-header__toggle nav-toggle" type="button">
           <span class="nav-toggle__line"></span>
           <span class="visually-hidden">Открыть меню.</span>
@@ -42,8 +48,13 @@
         <h1 class="hero__title title title--primary">Функциональное<br>питание для котов</h1>
         <p class="hero__subtitle">Занялся собой? Займись котом!</p>
       </div>
-      <img class="hero__product-image" src="img/hero/hero-product.png" width="280" height="270"
-        alt="Корм для котов - Кэт энерджи c курицей.">
+      <div class="hero__container-image">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/hero/hero-product-desktop.png 1x, img/hero/hero-product-desktop@2x.png 2x" type="image/png" width="552" height="499">
+          <source media="(min-width: 768px)" srcset="img/hero/hero-product-tablet.png 1x, img/hero/hero-product-tablet@2x.png 2x" type="image/png" width="709" height="609">
+          <img class="hero__product-image" src="img/hero/hero-product-mobile.png" srcset="img/hero/hero-product-mobile@2x.png 2x" width="280" height="270" alt="Корм для котов - Кэт энерджи c курицей.">
+        </picture>
+      </div>
       <a class="hero__link-program button button--index" href="form.html">подобрать программу</a>
     </section>
   </header>
@@ -119,9 +130,11 @@
           </div>
         </div>
         <div class="example__compare-slider compare-slider" data-compare-slider>
-          <div data-cat-fat>
-            <img class="compare-slider__image compare-slider__image--primary" src="http://placehold.it/280x256"" width="
-              280" height="256" alt="Толстый кот.">
+          <div class="compare-slider__image-container compare-slider__image-container--primary" data-cat-fat style="clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/slider/thin-cat-tablet@1x.png 1x, img/slider/thin-cat-tablet@2x.png 2x" type="image/png" width="560" height="512">
+              <img class="compare-slider__image" src="img/slider/thin-cat-mobile@1x.png" srcset="img/slider/thin-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот.">
+            </picture>
           </div>
           <button class="compare-slider__curtain" data-slider-curtain type="button">
             <svg class="compare-slider__thumb" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
@@ -132,9 +145,11 @@
             </svg>
             <span class="visually-hidden">Шторка.</span>
           </button>
-          <div data-cat-thin>
-            <img class="compare-slider__image compare-slider__image--secondary" src="http://placehold.it/280x256"
-              width="280" height="256" alt="Худой кот.">
+          <div class="compare-slider__image-container compare-slider__image-container--secondary" data-cat-thin style="clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/slider/fat-cat-tablet@1x.png 1x, img/slider/fat-cat-tablet@2x.png 2x" type="image/png" width="560" height="512">
+              <img class="compare-slider__image" src="img/slider/fat-cat-mobile@1x.png" srcset="img/slider/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Худой кот.">
+            </picture>
           </div>
         </div>
       </div>
@@ -151,15 +166,20 @@
         <iframe class="contacts__location-map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197732!2d30.320472476646085!3d59.93871916209431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1690749136755!5m2!1sru!2sru"
           width="320" height="362" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <img class="contacts__location-image" src="#" width="320" height="362" alt="Расположение на карте.">
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="contacts__location-image-container">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/map/location-desktop.png 1x, img/map/location-desktop@2x.png 2x" type="image/png" width="1440" height="400px">
+            <source media="(min-width: 768px)" srcset="img/map/location-tablet.png 1x, img/map/location-tablet@2x.png 2x" type="image/png" width="768" height="400">
+            <img class="contacts__location-image" src="img/map/location-mobile.png" srcset="img/map/location-mobile@2x.png 2x" width="320" height="362" alt="Расположение на карте.">
+          </picture>
+        </div>
       </div>
     </div>
     <div class="main-footer__container">
       <div class="social">
-        <span class="logo-title logo-title--size_xl">
-          <img class="logo-title__image" src="img/logo/logo-title-xl.png" width="128" height="24" alt="Кэт энерджи.">
-        </span>
+        <img class="logo-title logo-title--size_xl" src="img/logo/logo-title.svg" width="128" height="24" alt="Кэт энерджи.">
         <ul class="social-list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="#">

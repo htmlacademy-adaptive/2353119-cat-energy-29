@@ -1,11 +1,10 @@
 @use "../bootstrap.scss" as *;
 
 .site-navigation {
-  //спросить
-  &--index a {
+  &--index .site-navigation__link {
     @media (min-width: $desktop-width) {
       color: $base-white;
-      border-color: $base-white;
+      text-decoration-color: $base-white;
     }
   }
 }

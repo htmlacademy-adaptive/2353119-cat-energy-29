@@ -11,15 +11,28 @@
   }
 }
 
-.compare-slider__image {
-  display: block;
-  width: 100%;
-  height: auto;
+.compare-slider__image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &--primary {
+    z-index: 2;
+  }
 
   &--secondary {
-    position: absolute;
-    top: 0;
-    left: 0;
+    z-index: 1;
+  }
+}
+
+.compare-slider__image {
+  display: block;
+  width: 280px;
+  height: 256px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
   }
 }
 
@@ -36,7 +49,7 @@
   transform: translateX(50%);
   border-radius: 2px;
   background-color: $special-grey;
-  z-index: 1;
+  z-index: 3;
 }
 
 .compare-slider__thumb {
