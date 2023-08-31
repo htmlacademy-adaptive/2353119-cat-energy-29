@@ -1,7 +1,9 @@
 @use "../bootstrap.scss" as *;
 
 .inner-container {
-  @include break-point;
+  // @include break-point;
+
+  width: 100vw;
 }
 
 .inner-container__title {

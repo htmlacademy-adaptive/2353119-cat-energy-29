@@ -11,7 +11,7 @@
 }
 
 .program-form__header {
-  @include page-margin;
+  // @include page-margin;
 
   margin-bottom: 39px;
 
@@ -40,7 +40,7 @@
   margin: 0;
   font-family: $font-oswald;
   text-transform: uppercase;
-  color: $base-black;
+  color: $basic-black;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -49,7 +49,7 @@
 }
 
 .program-form__footer {
-  @include page-margin;
+  // @include page-margin;
 
   display: grid;
   row-gap: 21px;

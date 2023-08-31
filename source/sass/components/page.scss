@@ -14,7 +14,7 @@
 
 .page__header {
   margin-bottom: 27px;
-  border-bottom: 1px solid $base-border-color;
+  border-bottom: 1px solid $basic-light-gray;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
@@ -48,7 +48,7 @@
         top: 0;
         right: 0;
         background-image:
-          linear-gradient($base-gradient-color, $base-gradient-color),
+          linear-gradient($basic-green-opacity85, $basic-green-opacity85),
           url("../img/hero/hero-cat-background-desktop.jpg"),
           linear-gradient(to bottom, rgb(76, 75, 80), rgb(89, 79, 84));
         background-repeat: no-repeat;
@@ -71,8 +71,7 @@
   }
 }
 
-.page__inner {
-  width: 100vw;
+.page__catalog {
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
@@ -83,3 +82,4 @@
     margin-bottom: 87px;
   }
 }
+

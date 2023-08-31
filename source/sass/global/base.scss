@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 body {
   margin: 0;
@@ -14,8 +18,8 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: $special-dark-grey;
-  background-color: $base-white;
+  color: $basic-dark-grey;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;

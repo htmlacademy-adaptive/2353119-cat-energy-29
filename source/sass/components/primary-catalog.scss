@@ -20,8 +20,8 @@
 .primary-catalog__item {
   min-height: 209px;
   padding: 20px 0 24px;
-  border-top: 1px solid $card-border-color;
-  border-bottom: 1px solid $card-border-color;
+  border-top: 1px solid $special-very-light-gray;
+  border-bottom: 1px solid $special-very-light-gray;
 
   &:not(:first-child) {
     border-top: none;
@@ -43,6 +43,6 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 0 37px 40px;
-    background-color: $base-gray;
+    background-color: $basic-gray;
   }
 }

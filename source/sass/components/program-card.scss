@@ -28,7 +28,7 @@
     height: 50px;
     margin: 0 20px 22px 0;
     border-radius: 50%;
-    background-color: $base-bg-color;
+    background-color: $basic-green;
     content: "";
 
     @media (min-width: $tablet-width) {
@@ -74,7 +74,7 @@
     left: 0;
     width: 50px;
     height: 50px;
-    background-image: url("../img/program/weight-loss.svg");
+    background-image: url("../stack.svg#icon-weight-loss");
     background-position: center;
 
     @media (min-width: $tablet-width) {
@@ -98,7 +98,7 @@
     left: -7px;
     width: 67px;
     height: 28px;
-    background-image: url("../img/program/weight-gain.svg");
+    background-image: url("../stack.svg#icon-weight-gain");
     background-position: center;
 
     @media (min-width: $tablet-width) {
@@ -144,7 +144,7 @@
     height: 1px;
     position: absolute;
     bottom: -23px;
-    background-color: $base-border-color;
+    background-color: $basic-light-gray;
     content: "";
   }
 
@@ -168,20 +168,37 @@
   grid-column: 1 / -1;
   display: flex;
   align-items: center;
-  column-gap: 15px;
   padding: 4px 0;
   font-family: $font-oswald;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  color: $base-black;
+  color: $basic-black;
 
   &::after {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 7px solid $basic-black;
     content: "";
-    display: block;
-    width: 32px;
-    height: 10px;
+  }
+
+  &::before {
+    width: 18px;
+    height: 2px;
+    margin-right: -1px;
+    background-color: $basic-black;
+    transition: 0.2s all linear;
+    content: "";
+  }
+
+  &:hover::before,
+  &:focus::before {
+    width: 26px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
@@ -196,3 +213,13 @@
     line-height: 30px;
   }
 }
+
+.program-card__link-text {
+  order: -1;
+  margin-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
+  }
+}
+

@@ -17,7 +17,7 @@
 @mixin font-title {
   font-family: $font-oswald;
   font-weight: 400;
-  color: $base-black;
+  color: $basic-black;
 }
 
 @mixin font-title-card {
@@ -28,16 +28,15 @@
 
 @mixin break-point {
   min-width: 250px;
-  max-width: 500px;
+  // max-width: 500px;
 
   @media (min-width: $tablet-width) {
     min-width: $tablet-width;
-    max-width: 1220px;
+    // max-width: 1220px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: $desktop-width;
-    max-width: $desktop-width;
+    width: $desktop-width;
   }
 }
 
@@ -56,13 +55,6 @@
   }
 }
 
-// //костыль?
-@mixin padding-reset {
-  margin: 0 -20px;
-  padding: 0 20px;
-}
-
-
 @mixin page-margin {
   margin-left: $mobile-edges;
   margin-right: $mobile-edges;
@@ -78,7 +70,7 @@
   }
 }
 
-@mixin full-width-vw {
-  margin-left: calc(-100vw / 2 + 100% / 2);
-  margin-right: calc(-100vw / 2 + 100% / 2);
-}
+// @mixin full-width-vw {
+//   margin-left: calc(-100vw / 2 + 100% / 2);
+//   margin-right: calc(-100vw / 2 + 100% / 2);
+// }

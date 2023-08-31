@@ -17,13 +17,15 @@
     <div class="main-header__container">
       <a class="main-header__logo logo" href="index.html">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo/logo-tablet.svg" type="image/svg+xml" width="202" height="59">
-          <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" type="image/svg+xml" width="174" height="50">
-          <img class="logo__image" src="img/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+          <source media="(min-width: 1440px)" srcset="img/logo/logo-tablet.svg" width="202" height="59">
+          <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="174" height="50">
+          <img class="logo__image" src="img/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи.">
         </picture>
       </a>
       <span class="main-header__logo-title logo-title">
-        <img class="logo-title__image" src="img/logo/logo-title.svg" width="101" height="18" alt="Cat energy.">
+        <svg class="logo-title__icon" role="img" width="101" height="18" aria-label="Магазин Кэт энерджи.">
+          <use href="../stack.svg#icon-logo-title"></use>
+        </svg>
       </span>
       <button class="main-header__toggle nav-toggle" type="button">
         <span class="nav-toggle__line"></span>
@@ -44,7 +46,7 @@
       </ul>
     </nav>
   </header>
-  <main class="page__inner inner-container">
+  <main class="page__catalog inner-container">
     <h1 class="inner-container__title title title--primary">Каталог продукции</h1>
     <section class="inner-container__primary-catalog primary-catalog">
       <h2 class="visually-hidden">Основные товары</h2>
@@ -339,45 +341,58 @@
         <address class="contacts__address"><span>ул. Большая<br>Конюшенная, д. 19/8</span><br>Санкт-Петербург</address>
       </div>
       <div class="contacts__location">
-        <iframe class="contacts__location-map"
+        <iframe class="contacts__location-map" title="Расположение на карте."
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197732!2d30.320472476646085!3d59.93871916209431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1690749136755!5m2!1sru!2sru"
           width="320" height="362" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
-        <div class="contacts__location-image-container">
+        <a class="contacts__location-image-container" href="https://goo.gl/maps/sYF9GUo3ipDakvAeA">
           <picture>
+            <source media="(min-width: 1440px)" srcset="img/map/location-desktop.webp 1x, img/map/location-desktop@2x.webp 2x" type="image/webp" width="1440" height="400px">
+            <source media="(min-width: 768px)" srcset="img/map/location-tablet.webp 1x, img/map/location-tablet@2x.webp 2x" type="image/webp" width="768" height="400">
+            <source srcset="img/map/location-mobile.webp 1x, img/map/location-mobile@2x.webp 2x" type="image/webp" width="320" height="362">
             <source media="(min-width: 1440px)" srcset="img/map/location-desktop.png 1x, img/map/location-desktop@2x.png 2x" type="image/png" width="1440" height="400px">
             <source media="(min-width: 768px)" srcset="img/map/location-tablet.png 1x, img/map/location-tablet@2x.png 2x" type="image/png" width="768" height="400">
             <img class="contacts__location-image" src="img/map/location-mobile.png" srcset="img/map/location-mobile@2x.png 2x" width="320" height="362" alt="Расположение на карте.">
           </picture>
-        </div>
+        </a>
       </div>
     </div>
     <div class="main-footer__container">
       <div class="social">
-        <span class="logo-title logo-title--size_xl">
-          <img class="logo-title__image" src="img/logo/logo-title.svg" width="128" height="24" alt="Кэт энерджи.">
-        </span>
+        <a class="social__logo-title-link logo-title" href="#" aria-label="К началу сайта магазина Кэт энерджи.">
+          <svg class="logo-title__icon logo-title__icon--size_xl" role="img" width="128" height="24">
+            <use href="../stack.svg#icon-logo-title"></use>
+          </svg>
+        </a>
         <ul class="social-list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">
-              <img src="#" width="28" height="22" alt="Мы в Вконтакте">
+            <a class="social__link" href="#" aria-label="Страница в Вконтакте">
+              <svg class="social__icon" role="img" width="28" height="22">
+                <use href="../stack.svg#icon-vkontakte"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">
-              <img src="#" width="28" height="22" alt="Мы в Ютубе">
+            <a class="social__link" href="#" aria-label="Страница в Ютубе">
+              <svg class="social__icon" role="img" width="28" height="22">
+                <use href="../stack.svg#icon-youtube"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="#">
-              <img src="#" width="28" height="22" alt="Мы в Телеграме">
+            <a class="social__link" href="#" aria-label="Чат в Телеграме">
+              <svg class="social__icon" role="img" width="28" height="22">
+                <use href="../stack.svg#icon-telegram"></use>
+              </svg>
             </a>
           </li>
         </ul>
-        <a class="logo-academy" href="#">
+        <a class="logo-academy" href="https://lea.verou.me/blog/2019/05/utility-convert-svg-path-to-all-relative-or-all-absolute-commands/" aria-label="Сайт HTML Academy">
           <span class="logo-academy__name">HTML Academy</span>
-          <img class="logo-academy__icon" src="#" width="27" height="34" alt="Логотип HTML Academy">
+          <svg class="logo-academy__icon" role="img" width="27" height="34">
+            <use href="../stack.svg#icon-academy"></use>
+          </svg>
         </a>
       </div>
     </div>

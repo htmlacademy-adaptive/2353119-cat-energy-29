@@ -41,15 +41,37 @@
 
   display: flex;
   place-items: center;
-  width: 4px;
   position: absolute;
   top: 0;
   bottom: 0;
   left: calc(50% - 4px);
   transform: translateX(50%);
+  color: $special-grey;
+  border: 2px solid $special-grey;
   border-radius: 2px;
-  background-color: $special-grey;
   z-index: 3;
+
+  &:hover,
+  &:hover .compare-slider__thumb,
+  &:focus,
+  &:focus .compare-slider__thumb  {
+    border-color: $basic-green;
+    color: $basic-green;
+  }
+
+  &:active,
+  &:active .compare-slider__thumb {
+    border-color: $basic-light-green;
+    color: $basic-light-green;
+  }
+
+  &:disabled,
+  &:disabled .compare-slider__thumb {
+    opacity: 0.8;
+    border-color: $basic-light-green;
+    color: $basic-light-green;
+    cursor: default;
+  }
 }
 
 .compare-slider__thumb {

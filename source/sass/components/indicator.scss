@@ -14,7 +14,7 @@
   width: 124px;
   padding: 14px 20px 0;
   margin-bottom: 14px;
-  border: 1px solid $special-border-color;
+  border: 1px solid $special-light-gray;
   border-radius: 3px;
 
   @media (min-width: $tablet-width) {
@@ -34,7 +34,7 @@
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
-  color: $base-black;
+  color: $basic-black;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 5px;
@@ -54,17 +54,17 @@
   font-size: 12px;
   line-height: 1em;
   text-align: center;
-  background-color: $base-gray;
+  background-color: $basic-gray;
 
   @media (min-width: $tablet-width) {
     width: 142px;
     padding: 0 5px;
     top: 5px;
     font-size: 14px;
-    background-color: $base-white;
+    background-color: $basic-white;
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $base-gray;
+    background-color: $basic-gray;
   }
 }

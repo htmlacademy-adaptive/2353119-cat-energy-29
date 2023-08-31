@@ -3,7 +3,7 @@
 .instructions {
   @media (min-width: $tablet-width) {
     padding-bottom: 60px;
-    border-bottom: 1px solid $section-border-color;
+    border-bottom: 1px solid $special-platinum;
   }
 
   @media (min-width: $desktop-width) {
@@ -66,7 +66,7 @@
       font-family: $font-oswald;
       font-size: 280px;
       line-height: 1em;
-      color: $base-gray;
+      color: $basic-gray;
       z-index: -1;
       content: counter(item);
     }
@@ -79,8 +79,7 @@
     height: 60px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
-    background-color: $base-bg-color;
+    background-color: $basic-green;
     content: "";
 
     @media (min-width: $tablet-width) {
@@ -91,19 +90,23 @@
   }
 
   &--icon_leaf::before {
-    background-image: url("../img/icon/leaf.svg");
+    background-image: url("../stack.svg#icon-leaf");
+    background-size: 25px 28px;
   }
 
   &--icon_powder::before {
-    background-image: url("../img/icon/powder.svg");
+    background-image: url("../stack.svg#icon-powder");
+    background-size: 27px 29px;
   }
 
   &--icon_eat::before {
-    background-image: url("../img/icon/eat.svg");
+    background-image: url("../stack.svg#icon-eat");
+    background-size: 26px 30px;
   }
 
   &--icon_scales::before {
-    background-image: url("../img/icon/scales.svg");
+    background-image: url("../stack.svg#icon-scales");
+    background-size: 27px 31px;
   }
 }
 

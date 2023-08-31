@@ -44,6 +44,14 @@
   min-height: 45px;
   padding: 14px 35px 13px 15px;
 
+  &:focus + .data-owner__input-icon {
+    color: $basic-green;
+  }
+
+  &:invalid + .data-owner__input-icon {
+    color: $basic-light-coral;
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 52px;
     padding: 11px 35px 11px 20px;
@@ -53,10 +61,7 @@
 .data-owner__input-icon {
   position: absolute;
   top: 50%;
-  right: 13px;
+  right: 14px;
   transform: translateY(-50%);
-
-  @media (min-width: $tablet-width) {
-    right: 14px;
-  }
+  color: $basic-black;
 }

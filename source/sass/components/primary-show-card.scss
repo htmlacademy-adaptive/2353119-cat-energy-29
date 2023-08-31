@@ -13,16 +13,16 @@
     width: 30px;
     height: 30px;
     margin-bottom: 24px;
-    background-image: url("../img/icon/plus.svg");
+    background-image: url("../stack.svg#icon-plus");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
   }
 
   @media (min-width: $tablet-width) {
     display: grid;
     padding: 50px 37px 40px;
-    outline: 2px solid $base-gray;
+    outline: 2px solid $basic-gray;
     background: none;
 
     &::before {
@@ -78,6 +78,22 @@
 }
 
 .primary-show-card__button {
-  background-color: $base-gray;
-  color: $special-dark-grey;
+  background-color: $basic-gray;
+  color: $basic-dark-grey;
+
+  &:hover,
+  &:focus {
+    background-color: $special-very-light-gray;
+  }
+
+  &:active {
+    color: $basic-dark-grey-opacity30;
+  }
+
+  // disabled
+  &:not([href]) {
+    color: $basic-dark-grey-opacity30;
+    background-color: $special-very-light-gray;
+    cursor: default;
+  }
 }

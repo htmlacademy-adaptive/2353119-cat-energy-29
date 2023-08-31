@@ -49,8 +49,8 @@
   display: grid;
   min-height: 130px;
   padding: 13px 0;
-  border-top: 1px solid $base-border-color;
-  border-bottom: 1px solid $base-border-color;
+  border-top: 1px solid $basic-light-gray;
+  border-bottom: 1px solid $basic-light-gray;
 
   &:not(:first-child) {
     border-top: none;
@@ -60,7 +60,7 @@
     min-height: 139px;
     padding: 26px 38px;
     border: none;
-    outline: 1px solid $base-border-color;
+    outline: 1px solid $basic-light-gray;
   }
 
   @media (min-width: $desktop-width) {
@@ -68,8 +68,8 @@
     margin: 0;
     padding: 15px 0;
     outline: none;
-    border-top: 1px solid $base-border-color;
-    border-bottom: 1px solid $base-border-color;
+    border-top: 1px solid $basic-light-gray;
+    border-bottom: 1px solid $basic-light-gray;
 
     &:not(:first-child) {
       border-top: none;

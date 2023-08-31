@@ -19,6 +19,19 @@
   }
 }
 
+.social__logo-title-link {
+  justify-self: center;
+
+  &:hover,
+  &:focus {
+    color: $raven-black;
+  }
+
+  &:active {
+    color: $dim-gray;
+  }
+}
+
 .social-list {
   @include reset-list;
 
@@ -31,6 +44,19 @@
 .social__link {
   display: grid;
   place-content: center;
+  color: $special-grey;
+
+  &:hover,
+  &:focus {
+    color: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__icon {
   width: 28px;
   height: 22px;
 }

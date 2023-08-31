@@ -2,12 +2,12 @@
 
 .main-footer {
   @include break-point;
-  background-color: $base-gray;
+  background-color: $basic-gray;
 }
 
 .main-footer__container {
   &--index-page {
-    background: $base-white;
+    background: $basic-white;
   }
 
   @media (min-width: $desktop-width) {

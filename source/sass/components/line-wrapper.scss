@@ -1,26 +1,42 @@
 @use "../bootstrap.scss" as *;
 
-.line-wrapper {
-  display: grid;
-  grid-template-columns: auto auto minmax($mobile-edges, 1fr);
-  align-content: baseline;
-  column-gap: 20px;
+// .line-wrapper {
+  // display: grid;
+  // grid-template-columns: auto auto minmax($mobile-edges, 1fr);
 
-  &::after,
-  &::before {
-    position: relative;
-    align-self: start;
-    height: 2px;
-    background-color: $base-bg-color;
-    content: "";
-  }
+  // display: grid;
+  // align-content: baseline;
+  // column-gap: 20px;
 
-  @media (min-width: $tablet-width) {
-    grid-template-columns: minmax($tablet-edges, auto) auto minmax($tablet-edges, 1fr);
-    column-gap: 40px;
-  }
+  // position: relative;
 
-  @media (min-width: $desktop-width) {
-    grid-template-columns: minmax(70px, auto) auto minmax(70px, 1fr);
-  }
-}
+  // &::after,
+  // &::before {
+    // position: absolute;
+    // // align-self: start;
+    // height: 2px;
+    // background-color: $basic-green;
+    // content: "";
+
+
+    // width: ;
+//   }
+
+//   &::before {
+//     // margin-left: calc(-100vw / 2 + 100% / 2);
+
+//   }
+
+//   &::after {
+
+//   }
+
+//   @media (min-width: $tablet-width) {
+//     // grid-template-columns: minmax($tablet-edges, auto) auto minmax($tablet-edges, 1fr);
+//     // column-gap: 40px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     // grid-template-columns: minmax(70px, auto) auto minmax(70px, 1fr);
+//   }
+// }

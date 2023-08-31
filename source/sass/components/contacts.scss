@@ -18,7 +18,7 @@
     position: absolute;
     top: 95px;
     z-index: 1;
-    background-color: $base-white;
+    background-color: $basic-white;
   }
 }
 
@@ -67,6 +67,7 @@
 }
 
 .contacts__location-image-container {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
