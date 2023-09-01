@@ -1,14 +1,14 @@
 @use "../bootstrap.scss" as *;
 
-.program-form {
-  @media (min-width: $tablet-width) {
-    padding: 0 40px;
-  }
+// .program-form {
+//   @media (min-width: $tablet-width) {
+//     padding: 0 40px;
+//   }
 
-  @media (min-width: $desktop-width) {
-    padding: 0;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     padding: 0;
+//   }
+// }
 
 .program-form__header {
   // @include page-margin;

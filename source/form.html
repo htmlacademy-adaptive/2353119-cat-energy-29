@@ -47,132 +47,134 @@
     </nav>
   </header>
   <main class="page__form inner-container">
-    <div class="container">
-      <section class="program-form">
-        <header class="program-form__header">
-          <h1 class="program-form__title title title--primary">Подбор программы</h1>
-          <p class="program-form__description">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
-        </header>
-        <form class="program-form__main form" id="program-form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="form__fieldset form__fieldset--data-cat data-cat" role="group" aria-labelledby="data-cat">
-            <h2 class="visually-hidden" id="data-cat">Данные кота</h2>
-            <ul class="form__list data-cat__list data-cat__list--first">
-              <li class="form__item">
-                <label class="form__field data-cat__field">
-                  <span class="form__label data-cat__label">ИМЯ:*</span>
-                  <input class="form__input data-cat__input" type="text" name="cat-name" value="барсик" required>
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__field data-cat__field">
-                  <span class="form__label data-cat__label">Вес (кг):*</span>
-                  <input class="form__input data-cat__input" type="number" name="cat-weight" value="7" required>
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__field data-cat__field">
-                  <span class="form__label data-cat__label">Возраст (лет):</span>
-                  <input class="form__input data-cat__input" type="number" name="cat-age" value="7">
-                </label>
-              </li>
-            </ul>
-            <ul class="form__list data-cat__list data-cat__list--second">
-              <li class="form__item">
-                <label class="form__field form__field--radio">
-                  <input class="form__input form__input--radio visually-hidden" type="radio" name="program-selection" checked>
-                  <span class="form__control-mark form__control-mark--radio"></span>
-                  <span class="form__label">похудение</span>
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__field form__field--radio">
-                  <input class="form__input form__input--radio visually-hidden" type="radio" name="program-selection">
-                  <span class="form__control-mark form__control-mark--radio"></span>
-                  <span class="form__label">Набор массы</span>
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__field form__field--radio">
-                  <input class="form__input form__input--radio visually-hidden" type="radio" name="program-selection">
-                  <span class="form__control-mark form__control-mark--radio"></span>
-                  <span class="form__label">Не знаю (Нужен ваш совет)</span>
-                </label>
-              </li>
-            </ul>
-          </div>
-          <h2 class="form__legend data-owner__title title title--secondary line-wrapper" id="owner-data">Контактные
-            данные <br>(владельца кота)
-          </h2>
-          <div class="form__fieldset form__fieldset--data-owner data-owner" role="group" aria-labelledby="owner-data">
-            <label class="form__field data-owner__field">
-              <span class="form__label data-owner__label">E-mail:*</span>
-              <div class="data-owner__input-wrapper data-owner__input-wrapper--email">
-                <input class="form__input data-owner__input" type="email" name="email" value="kuklachev@gmail.com"
-                  placeholder="Ваш e-mail" required>
-                <svg class="data-owner__input-icon" width="20" height="20" aria-hidden="true" focusable="false">
-                  <use href="../stack.svg#icon-email"></use>
-                </svg>
-              </div>
-            </label>
-            <label class="form__field data-owner__field">
-              <span class="form__label data-owner__label">Телефон:*</span>
-              <div class="data-owner__input-wrapper data-owner__input-wrapper--tel">
-                <input class="form__input data-owner__input" type="tel" name="tel" value="8 (960) 900-60-90"
-                  placeholder="Ваш телефон" required>
-                <svg class="data-owner__input-icon" width="20" height="20" aria-hidden="true" focusable="false">
-                  <use href="../stack.svg#icon-tel"></use>
-                </svg>
-              </div>
-            </label>
-          </div>
-          <h2 class="form__legend comment__title title title--secondary line-wrapper" id="comment">Комментарий</h2>
-          <div class="form__fieldset form__fieldset--comment comment" role="group" aria-labelledby="comment">
-            <label class="form__field form__field--comment">
-              <span class="form__label">Расскажите обо всех повадках кота</span>
-              <textarea class="form__input form__input--textarea" name="text"></textarea>
-            </label>
-          </div>
-          <h2 class="form__legend details__title title title--secondary line-wrapper" id="details">Дополнительно</h2>
-          <div class="form__fieldset form__fieldset--details details" role="group" aria-labelledby="details">
-            <ul class="form__list details__list">
-              <li class="form__item">
-                <label class="form__field form__field--checkbox">
-                  <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="details-sweetener" checked>
-                  <span class="form__control-mark form__control-mark--checkbox"></span>
-                  <span class="form__label">сахарозаменитель</span>
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__field form__field--checkbox">
-                  <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="details-water">
-                  <span class="form__control-mark form__control-mark--checkbox"></span>
-                  <span class="form__label">питьевая вода</span>
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__field form__field--checkbox">
-                  <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="details-milk">
-                  <span class="form__control-mark form__control-mark--checkbox"></span>
-                  <span class="form__label">молоко</span>
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__field form__field--checkbox">
-                  <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="details-vitamins">
-                  <span class="form__control-mark form__control-mark--checkbox"></span>
-                  <span class="form__label">витамины</span>
-                </label>
-              </li>
-            </ul>
-          </div>
-        </form>
-        <footer class="program-form__footer">
-          <button class="program-form__button button button--form" type="submit" form="program-form">отправить
-            заявку</button>
-          <small class="program-form__note">* — Обязательные поля</small>
-        </footer>
-      </section>
-    </div>
+    <section class="program-form">
+      <!-- <div class="container"> -->
+
+          <header class="program-form__header">
+            <h1 class="program-form__title title title--primary">Подбор программы</h1>
+            <p class="program-form__description">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+          </header>
+          <form class="program-form__main form" id="program-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="form__fieldset form__fieldset--data-cat data-cat" role="group" aria-labelledby="data-cat">
+              <h2 class="visually-hidden" id="data-cat">Данные кота</h2>
+              <ul class="form__list data-cat__list data-cat__list--first">
+                <li class="form__item">
+                  <label class="form__field data-cat__field">
+                    <span class="form__label data-cat__label">ИМЯ:*</span>
+                    <input class="form__input data-cat__input" type="text" name="cat-name" value="барсик" required>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__field data-cat__field">
+                    <span class="form__label data-cat__label">Вес (кг):*</span>
+                    <input class="form__input data-cat__input" type="number" name="cat-weight" value="7" required>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__field data-cat__field">
+                    <span class="form__label data-cat__label">Возраст (лет):</span>
+                    <input class="form__input data-cat__input" type="number" name="cat-age" value="7">
+                  </label>
+                </li>
+              </ul>
+              <ul class="form__list data-cat__list data-cat__list--second">
+                <li class="form__item">
+                  <label class="form__field form__field--radio">
+                    <input class="form__input form__input--radio visually-hidden" type="radio" name="program-selection" checked>
+                    <span class="form__control-mark form__control-mark--radio"></span>
+                    <span class="form__label">похудение</span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__field form__field--radio">
+                    <input class="form__input form__input--radio visually-hidden" type="radio" name="program-selection">
+                    <span class="form__control-mark form__control-mark--radio"></span>
+                    <span class="form__label">Набор массы</span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__field form__field--radio">
+                    <input class="form__input form__input--radio visually-hidden" type="radio" name="program-selection">
+                    <span class="form__control-mark form__control-mark--radio"></span>
+                    <span class="form__label">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <h2 class="form__legend data-owner__title title title--secondary line-wrapper" id="owner-data">Контактные
+              данные <br>(владельца кота)
+            </h2>
+            <div class="form__fieldset form__fieldset--data-owner data-owner" role="group" aria-labelledby="owner-data">
+              <label class="form__field data-owner__field">
+                <span class="form__label data-owner__label">E-mail:*</span>
+                <div class="data-owner__input-wrapper data-owner__input-wrapper--email">
+                  <input class="form__input data-owner__input" type="email" name="email" value="kuklachev@gmail.com"
+                    placeholder="Ваш e-mail" required>
+                  <svg class="data-owner__input-icon" width="20" height="20" aria-hidden="true" focusable="false">
+                    <use href="../stack.svg#icon-email"></use>
+                  </svg>
+                </div>
+              </label>
+              <label class="form__field data-owner__field">
+                <span class="form__label data-owner__label">Телефон:*</span>
+                <div class="data-owner__input-wrapper data-owner__input-wrapper--tel">
+                  <input class="form__input data-owner__input" type="tel" name="tel" value="8 (960) 900-60-90"
+                    placeholder="Ваш телефон" required>
+                  <svg class="data-owner__input-icon" width="20" height="20" aria-hidden="true" focusable="false">
+                    <use href="../stack.svg#icon-tel"></use>
+                  </svg>
+                </div>
+              </label>
+            </div>
+            <h2 class="form__legend comment__title title title--secondary line-wrapper" id="comment">Комментарий</h2>
+            <div class="form__fieldset form__fieldset--comment comment" role="group" aria-labelledby="comment">
+              <label class="form__field form__field--comment">
+                <span class="form__label">Расскажите обо всех повадках кота</span>
+                <textarea class="form__input form__input--textarea" name="text"></textarea>
+              </label>
+            </div>
+            <h2 class="form__legend details__title title title--secondary line-wrapper" id="details">Дополнительно</h2>
+            <div class="form__fieldset form__fieldset--details details" role="group" aria-labelledby="details">
+              <ul class="form__list details__list">
+                <li class="form__item">
+                  <label class="form__field form__field--checkbox">
+                    <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="details-sweetener" checked>
+                    <span class="form__control-mark form__control-mark--checkbox"></span>
+                    <span class="form__label">сахарозаменитель</span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__field form__field--checkbox">
+                    <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="details-water">
+                    <span class="form__control-mark form__control-mark--checkbox"></span>
+                    <span class="form__label">питьевая вода</span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__field form__field--checkbox">
+                    <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="details-milk">
+                    <span class="form__control-mark form__control-mark--checkbox"></span>
+                    <span class="form__label">молоко</span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__field form__field--checkbox">
+                    <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="details-vitamins">
+                    <span class="form__control-mark form__control-mark--checkbox"></span>
+                    <span class="form__label">витамины</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </form>
+          <footer class="program-form__footer">
+            <button class="program-form__button button button--form" type="submit" form="program-form">отправить
+              заявку</button>
+            <small class="program-form__note">* — Обязательные поля</small>
+          </footer>
+
+      <!-- </div> -->
+    </section>
   </main>
   <footer class="page__footer main-footer">
     <h2 class="visually-hidden">Контакты</h2>
