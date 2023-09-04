@@ -1,6 +1,6 @@
 @use "../bootstrap.scss" as *;
 
-// перполнение переделать
+//TODO перполнение переделать
 .program-card {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -222,4 +222,3 @@
     margin-right: 25px;
   }
 }
-

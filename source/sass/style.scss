@@ -13,7 +13,7 @@
 @use "./components/main-header.scss";
 @use "./components/main-container.scss";
 @use "./components/main-footer.scss";
-@use "./components/inner-container.scss"; //*
+@use "./components/catalog.scss";
 @use "./components/site-navigation.scss";
 @use "./components/logo.scss";
 @use "./components/hero.scss";
@@ -22,7 +22,6 @@
 @use "./components/social.scss";
 @use "./components/logo-academy.scss";
 @use "./components/logo-title.scss";
-@use "./components/line-wrapper.scss";
 
 //index
 @use "./components/program.scss";

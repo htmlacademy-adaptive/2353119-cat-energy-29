@@ -6,11 +6,10 @@
   grid-template-rows: 27px;
 
   &::after {
+    @include pseudo;
     grid-row: 1 / 3;
     grid-column: 1 / -1;
-    display: block;
-    width: 100%;
-    height: 100%;
+    position: static;
     background-image:
       linear-gradient($basic-green-opacity85, $basic-green-opacity85),
       url("../img/hero/hero-cat-background.jpg"),
@@ -20,7 +19,6 @@
     background-position: center, center, right, left;
     background-size: contain, contain, 50%, 50%;
     z-index: -1;
-    content: "";
   }
 
   @media (min-width: $tablet-width) {
@@ -37,6 +35,8 @@
     grid-column: 1 / -1;
     grid-template-columns: $desktop-edges 1fr 1fr $desktop-edges;
     grid-template-rows: 81px;
+    width: $desktop-width;
+    margin: 0 auto;
     padding-bottom: 52px;
   }
 }

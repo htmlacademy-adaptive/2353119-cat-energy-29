@@ -62,6 +62,8 @@
   &:hover,
   &:focus {
     opacity: 0.6;
+
+    @include transition(0.1s, opacity);
   }
 
   &:active {

@@ -3,17 +3,8 @@
 .comment__title {
   margin-bottom: 38px;
 
-  &::after {
-    top: 15px;
-  }
-
   @media (min-width: $tablet-width) {
     margin-bottom: 87px;
-
-    &::after,
-    &::before {
-      top: 22px;
-    }
   }
 
   @media (min-width: $desktop-width) {

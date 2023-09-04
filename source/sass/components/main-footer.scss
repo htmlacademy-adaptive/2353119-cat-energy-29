@@ -1,10 +1,5 @@
 @use "../bootstrap.scss" as *;
 
-.main-footer {
-  @include break-point;
-  background-color: $basic-gray;
-}
-
 .main-footer__container {
   &--index-page {
     background: $basic-white;
@@ -14,3 +9,10 @@
     position: relative;
   }
 }
+
+//TODO Придержать (преполнения блока)
+// .main-footer__wrapper {
+//   @media (min-width: $desktop-width) {
+//     position: absolute;
+//   }
+// }

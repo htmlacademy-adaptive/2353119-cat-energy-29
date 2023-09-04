@@ -1,29 +1,7 @@
 @use "../bootstrap.scss" as *;
 
 .container {
-  width: 100%;
+  @include page-padding;
+  @include break-point;
+  margin: 0 auto;
 }
-
-// .container {
-//   // padding: 0 20px;
-
-//   &--bg-color_gray {
-//     background-color: $basic-gray;
-//   }
-
-  // @media (min-width: $tablet-width) {
-  //   padding: 0 30px;
-  // }
-
-  // @media (min-width: $desktop-width) {
-  //   padding: 0 110px;
-  // }
-
-//   &--border {
-//     border-bottom: 1px solid $basic-light-gray;
-
-//     @media (min-width: $tablet-width) {
-//       border: none;
-//     }
-//   }
-// }

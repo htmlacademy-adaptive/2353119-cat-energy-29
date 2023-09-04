@@ -3,16 +3,19 @@
 .primary-catalog__list {
   @include reset-list;
 
-  @media (min-width: $tablet-width) {
-    @include page-margin;
+  //TODO поправить выпадение карточек
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  justify-content: center;
+  column-gap: 15px;
 
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 324px);
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
     gap: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(auto-fill, 245px);
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
     gap: 63px 80px;
   }
 }
@@ -20,11 +23,31 @@
 .primary-catalog__item {
   min-height: 209px;
   padding: 20px 0 24px;
-  border-top: 1px solid $special-very-light-gray;
-  border-bottom: 1px solid $special-very-light-gray;
+  position: relative;
 
-  &:not(:first-child) {
-    border-top: none;
+  &::before {
+    @include pseudo(100vw, 1px, $special-very-light-gray);
+    @include full-width-vw;
+
+    top: 0;
+
+    //TODO Уточнить
+    //решает проблему с выпадением карточек
+    @media (min-width: 615px) {
+      content: none;
+    }
+  }
+
+  &:last-child::after {
+    @include pseudo(100vw, 1px, $special-very-light-gray);
+    @include full-width-vw;
+
+    bottom: 0;
+
+    //решает проблему с выпадением карточек
+    @media (min-width: 615px) {
+      content: none;
+    }
   }
 
   &--show {
@@ -32,16 +55,19 @@
   }
 
   @media (min-width: $tablet-width) {
-    border: none;
+    max-width: 400px;
     padding: 81px 0 0;
+
+    //TODO дубль (придержать)
+    &::before,
+    &:last-child::after {
+      content: none;
+    }
   }
 }
 
 .primary-catalog__card {
-  margin: 0 20px;
-
   @media (min-width: $tablet-width) {
-    margin: 0;
     padding: 0 37px 40px;
     background-color: $basic-gray;
   }

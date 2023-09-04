@@ -1,8 +1,6 @@
 @use "../bootstrap.scss" as *;
 
 .promo__container {
-  @include page-margin;
-
   display: grid;
   justify-items: center;
   align-items: center;

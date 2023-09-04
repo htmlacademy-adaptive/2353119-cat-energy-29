@@ -13,6 +13,8 @@
   &:hover .logo-academy__icon,
   &:focus .logo-academy__icon {
     color: $basic-green;
+
+    @include transition;
   }
 
   &:active {

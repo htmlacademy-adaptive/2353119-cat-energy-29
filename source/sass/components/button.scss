@@ -28,10 +28,12 @@
   &:hover,
   &:focus {
     background-color: $special-green;
+
+    @include transition(0.1s, background-color);
   }
 
   &:active {
-    color: 	$basic-white-opacity30;
+    color: $basic-white-opacity30;
   }
 
   &:disabled,

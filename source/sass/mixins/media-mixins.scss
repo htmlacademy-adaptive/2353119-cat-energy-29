@@ -1,0 +1,20 @@
+@use "../global/variables.scss" as *;
+
+//TODO падает gulp при замене всех правил (попробовать подключить без @forward)
+@mixin media-tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin media-desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (min-resolution: $retina-dpi) {
+    @content;
+  }
+}

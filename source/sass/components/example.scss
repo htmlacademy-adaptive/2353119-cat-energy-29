@@ -13,10 +13,8 @@
 }
 
 .example__container {
-  @include page-margin;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
+  @media (min-width: $tablet-width) { //TODO Проверить нужно?
+    // padding: 0;
   }
 
   @media (min-width: $desktop-width) {

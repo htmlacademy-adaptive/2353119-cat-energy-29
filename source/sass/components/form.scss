@@ -1,8 +1,6 @@
 @use "../bootstrap.scss" as *;
 
 .form__fieldset {
-  // @include page-margin;
-
   font-family: $font-oswald;
   font-size: 16px;
   line-height: 18px;
@@ -74,8 +72,6 @@
   line-height: 26px;
 
   @media (min-width: $tablet-width) {
-    // @include full-width-vw;   // поправить все title line, добавить обертку
-
     line-height: 1em;
   }
 }
@@ -201,14 +197,8 @@
   }
 }
 
-.form__input[type=number] {
-  -webkit-appearance: textfield;
-  appearance: textfield;
-}
-
-.form__input[type=number]::-webkit-outer-spin-button,
-.form__input[type=number]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+.form__input[type="number"]::-webkit-outer-spin-button,
+.form__input[type="number"]::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
@@ -234,9 +224,7 @@
   }
 
   @media (min-width: $tablet-width) {
-      width: 40px;
-      height: 40px;
+    width: 40px;
+    height: 40px;
   }
 }
-
-

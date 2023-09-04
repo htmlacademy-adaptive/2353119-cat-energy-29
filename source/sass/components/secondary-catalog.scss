@@ -5,24 +5,13 @@
   line-height: 1em;
   text-transform: none;
 
-  &::after {
-    top: 14px;
-  }
-
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
-
-    &::after,
-    &::before {
-      top: 22px;
-    }
   }
 }
 
 .secondary-catalog__container {
   @media (min-width: $desktop-width) {
-    @include page-margin;
-
     display: grid;
     grid-template-columns: 1fr auto;
     column-gap: 81px;
@@ -44,8 +33,6 @@
 }
 
 .secondary-catalog__item {
-  @include page-margin;
-
   display: grid;
   min-height: 130px;
   padding: 13px 0;
@@ -65,7 +52,6 @@
 
   @media (min-width: $desktop-width) {
     min-height: 72px;
-    margin: 0;
     padding: 15px 0;
     outline: none;
     border-top: 1px solid $basic-light-gray;

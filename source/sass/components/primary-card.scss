@@ -42,20 +42,37 @@
 
 .primary-card__image-link {
   place-self: center;
-  transition: 0.2s all ease-out;
 
   @keyframes shake {
-    0% {transform: rotate(0deg);}
-    20% {transform: rotate(15deg);}
-    40% {transform: rotate(-15deg);}
-    60% {transform: rotate(15deg);}
-    80% {transform: rotate(-15deg);}
-    100% {transform: rotate(0deg);}
+    0% {
+      transform: rotate(0deg);
+    }
+
+    20% {
+      transform: rotate(15deg);
+    }
+
+    40% {
+      transform: rotate(-15deg);
+    }
+
+    60% {
+      transform: rotate(15deg);
+    }
+
+    80% {
+      transform: rotate(-15deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
   }
 
   &:hover {
-    animation: shake 0.5s;
+    animation: 0.5s shake ease-in-out;
   }
+
   @media (min-width: $tablet-width) {
     margin: -71px 0 0;
   }
