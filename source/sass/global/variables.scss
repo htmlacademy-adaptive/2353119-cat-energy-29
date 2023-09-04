@@ -1,30 +1,36 @@
 // color
-$base-white: #ffffff;
-$base-gray: #f2f2f2;
-$base-black: #000000;
+$basic-white: #ffffff;
+$basic-white-opacity30: rgba(255, 255, 255, 0.3);
+$basic-black: #000000;
 $special-black: #111111;
+$raven-black: #3e3e3e;
+$basic-gray: #f2f2f2;
 $special-grey: #666666;
-$special-dark-grey: #444444;
+$dim-gray: #6b6b6b;
+$basic-dark-grey: #444444;
+$basic-dark-grey-opacity30: rgba(68, 68, 68, 0.3);
+$basic-light-gray: #d9d9d9;
+$special-light-gray: #cdcdcd;
+$special-very-light-gray: #ebebeb;
+$basic-green: #68b738;
+$basic-green-opacity85: rgba(104, 183, 56, 0.85);
+$special-green: #5eaa2f;
+$basic-light-green: #9ecc82;
+$basic-platinum: #e7e7e7;
+$special-platinum: #e6e6e6;
+$basic-silver: #bababa;
+$basic-light-coral: #ff8282;
 
-//border
-$base-border-color: #d9d9d9;
-$special-border-color: #cdcdcd;
-$input-border-color: #e7e7e7;
-$section-border-color: #e6e6e6;
-$card-border-color: #ebebeb;
-
-// bg-color
-$base-bg-color: #68b738;
-$base-gradient-color: rgba(104, 183, 56, 0.85);
-
-//fonts
+// fonts
 $font-lato: "Lato", "Arial", sans-serif;
 $font-oswald: "Oswald", "Arial", sans-serif;
 
 // break point
+$mobile-min-width: 250px;
 $mobile-width-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1440px;
+$retina-dppx: 2dppx;
 
 //page edges
 $mobile-edges: 20px;

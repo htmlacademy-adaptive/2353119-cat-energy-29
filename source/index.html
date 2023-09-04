@@ -13,17 +13,21 @@
 </head>
 
 <body class="page__body">
-  <header class="page__header page__header--index-page">
-    <div class="page__header-container main-header main-header--nojs">
-      <div class="main-header__container">
+  <header class="page__header main-header main-header--index main-header--nojs">
+    <div class="main-header__container main-header__container--index container">
+      <div class="main-header__wrapper">
         <a class="main-header__logo logo" href="index.html">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo/logo-tablet.svg" type="image/svg+xml" width="202" height="59">
-            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" type="image/svg+xml" width="174" height="50">
-            <img class="logo__image" src="img/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-tablet.svg" width="202" height="59">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="174" height="50">
+            <img class="logo__image" src="img/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи.">
           </picture>
         </a>
-        <img class="main-header__logo-title logo-title" src="img/logo/logo-title.svg" width="101" height="18" alt="Cat energy.">
+        <span class="main-header__logo-title logo-title">
+          <svg class="logo-title__icon" role="img" width="101" height="18" aria-label="Магазин Кэт энерджи.">
+            <use xlink:href="../stack.svg#icon-logo-title"></use>
+          </svg>
+        </span>
         <button class="main-header__toggle nav-toggle" type="button">
           <span class="nav-toggle__line"></span>
           <span class="visually-hidden">Открыть меню.</span>
@@ -50,38 +54,56 @@
       </div>
       <div class="hero__container-image">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/hero/hero-product-desktop.png 1x, img/hero/hero-product-desktop@2x.png 2x" type="image/png" width="552" height="499">
-          <source media="(min-width: 768px)" srcset="img/hero/hero-product-tablet.png 1x, img/hero/hero-product-tablet@2x.png 2x" type="image/png" width="709" height="609">
-          <img class="hero__product-image" src="img/hero/hero-product-mobile.png" srcset="img/hero/hero-product-mobile@2x.png 2x" width="280" height="270" alt="Корм для котов - Кэт энерджи c курицей.">
+          <source media="(min-width: 1440px)"
+            srcset="img/hero/hero-product-desktop.webp 1x, img/hero/hero-product-desktop@2x.webp 2x" type="image/webp"
+            width="552" height="499">
+          <source media="(min-width: 768px)"
+            srcset="img/hero/hero-product-tablet.webp 1x, img/hero/hero-product-tablet@2x.webp 2x" type="image/webp"
+            width="709" height="609">
+          <source srcset="img/hero/hero-product-mobile.webp 1x, img/hero/hero-product-mobile@2x.webp 2x"
+            type="image/webp" width="280" height="270">
+          <source media="(min-width: 1440px)"
+            srcset="img/hero/hero-product-desktop.png 1x, img/hero/hero-product-desktop@2x.png 2x" type="image/png"
+            width="552" height="499">
+          <source media="(min-width: 768px)"
+            srcset="img/hero/hero-product-tablet.png 1x, img/hero/hero-product-tablet@2x.png 2x" type="image/png"
+            width="709" height="609">
+          <img class="hero__product-image" src="img/hero/hero-product-mobile.png"
+            srcset="img/hero/hero-product-mobile@2x.png 2x" width="280" height="270"
+            alt="Корм для котов - Кэт энерджи.">
         </picture>
       </div>
       <a class="hero__link-program button button--index" href="form.html">подобрать программу</a>
     </section>
   </header>
   <main class="main-container">
-    <section class="main-container__program program">
+    <section class="main-container__program program container">
       <h2 class="visually-hidden">Выбор программы питания</h2>
       <ul class="program__list">
         <li class="program__item">
-          <div class="program-card program-card--weight-loss">
+          <div class="program-card program-card--weight_loss">
             <h3 class="program-card__title title title--secondary">похудение</h3>
             <p class="program-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по
               деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="program-card__link" href="#">каталог slim</a>
+            <a class="program-card__link" href="#">
+              <span class="program-card__link-text">каталог slim</span>
+            </a>
           </div>
         </li>
         <li class="program__item">
-          <div class="program-card program-card--weight-gain">
+          <div class="program-card program-card--weight_gain">
             <h3 class="program-card__title title title--secondary">набор массы</h3>
             <p class="program-card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
               Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="program-card__link" href="#">каталог pro</a>
+            <a class="program-card__link" href="#">
+              <span class="program-card__link-text">каталог pro</span>
+            </a>
           </div>
         </li>
       </ul>
     </section>
     <section class="main-container__instructions instructions">
-      <div class="instructions__container">
+      <div class="container">
         <h2 class="instructions__title title title--primary">Как это работает</h2>
         <ul class="instructions__list">
           <li class="instructions__item instructions__item--icon_leaf">
@@ -104,7 +126,7 @@
       </div>
     </section>
     <section class="main-container__example example">
-      <div class="example__container">
+      <div class="example__container container"> <!-- desktop container -->
         <div class="example__wrapper example__wrapper--grid_desktop">
           <h2 class="example__title title title--primary">Живой пример</h2>
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
@@ -130,25 +152,40 @@
           </div>
         </div>
         <div class="example__compare-slider compare-slider" data-compare-slider>
-          <div class="compare-slider__image-container compare-slider__image-container--primary" data-cat-fat style="clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);">
+          <div class="compare-slider__image-container compare-slider__image-container--primary" data-cat-fat
+            style="clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/slider/thin-cat-tablet@1x.png 1x, img/slider/thin-cat-tablet@2x.png 2x" type="image/png" width="560" height="512">
-              <img class="compare-slider__image" src="img/slider/thin-cat-mobile@1x.png" srcset="img/slider/thin-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот.">
+              <source media="(min-width: 768px)"
+                srcset="img/slider/thin-cat-tablet@1x.webp 1x, img/slider/thin-cat-tablet@2x.webp 2x" type="image/webp"
+                width="560" height="512">
+              <source srcset="img/slider/thin-cat-mobile@1x.webp 1x, img/slider/thin-cat-mobile@2x.webp 2x"
+                type="image/webp" width="280" height="256">
+              <source media="(min-width: 768px)"
+                srcset="img/slider/thin-cat-tablet@1x.png 1x, img/slider/thin-cat-tablet@2x.png 2x" type="image/png"
+                width="560" height="512">
+              <img class="compare-slider__image" src="img/slider/thin-cat-mobile@1x.png"
+                srcset="img/slider/thin-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот.">
             </picture>
           </div>
           <button class="compare-slider__curtain" data-slider-curtain type="button">
-            <svg class="compare-slider__thumb" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-              width="40" height="40" fill="none" viewBox="0 0 40 40">
-              <rect width="38" height="38" x="1" y="1" fill="#fff" rx="19" />
-              <path fill="#666" d="m16 11-8 9 8 9V11ZM32 20l-8-9v18l8-9Z" />
-              <rect width="38" height="38" x="1" y="1" stroke="#666" stroke-width="2" rx="19" />
+            <svg class="compare-slider__thumb" width="40" height="40" aria-hidden="true" focusable="false">
+              <use xlink:href="../stack.svg#icon-thumb"></use>
             </svg>
             <span class="visually-hidden">Шторка.</span>
           </button>
-          <div class="compare-slider__image-container compare-slider__image-container--secondary" data-cat-thin style="clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);">
+          <div class="compare-slider__image-container compare-slider__image-container--secondary" data-cat-thin
+            style="clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/slider/fat-cat-tablet@1x.png 1x, img/slider/fat-cat-tablet@2x.png 2x" type="image/png" width="560" height="512">
-              <img class="compare-slider__image" src="img/slider/fat-cat-mobile@1x.png" srcset="img/slider/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Худой кот.">
+              <source media="(min-width: 768px)"
+                srcset="img/slider/fat-cat-tablet@1x.webp 1x, img/slider/fat-cat-tablet@2x.webp 2x" type="image/webp"
+                width="560" height="512">
+              <source srcset="img/slider/fat-cat-mobile@1x.webp 1x, img/slider/fat-cat-mobile@2x.webp 2x"
+                type="image/webp" width="280" height="256">
+              <source media="(min-width: 768px)"
+                srcset="img/slider/fat-cat-tablet@1x.png 1x, img/slider/fat-cat-tablet@2x.png 2x" type="image/png"
+                width="560" height="512">
+              <img class="compare-slider__image" src="img/slider/fat-cat-mobile@1x.png"
+                srcset="img/slider/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Худой кот.">
             </picture>
           </div>
         </div>
@@ -157,49 +194,78 @@
   </main>
   <footer class="page__footer main-footer">
     <h2 class="visually-hidden">Контакты</h2>
-    <div class="main-footer__container main-footer__container--index-page">
-      <div class="contacts">
-        <h3 class="contacts__title title">приглашаем<br>к сотрудничеству<br>дилеров!</h3>
-        <address class="contacts__address"><span>ул. Большая<br>Конюшенная, д. 19/8</span><br>Санкт-Петербург</address>
-      </div>
-      <div class="contacts__location">
-        <iframe class="contacts__location-map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197732!2d30.320472476646085!3d59.93871916209431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1690749136755!5m2!1sru!2sru"
-          width="320" height="362" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-        <div class="contacts__location-image-container">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/map/location-desktop.png 1x, img/map/location-desktop@2x.png 2x" type="image/png" width="1440" height="400px">
-            <source media="(min-width: 768px)" srcset="img/map/location-tablet.png 1x, img/map/location-tablet@2x.png 2x" type="image/png" width="768" height="400">
-            <img class="contacts__location-image" src="img/map/location-mobile.png" srcset="img/map/location-mobile@2x.png 2x" width="320" height="362" alt="Расположение на карте.">
-          </picture>
+    <div class="main-footer__container main-footer__container--index-page contacts">
+      <div class="main-footer__wrapper container">
+        <div class="contacts__container">
+          <h3 class="contacts__title title">приглашаем<br>к сотрудничеству<br>дилеров!</h3>
+          <address class="contacts__address"><span>ул. Большая<br>Конюшенная, д. 19/8</span><br>Санкт-Петербург
+          </address>
         </div>
       </div>
+      <div class="contacts__location">
+        <iframe class="contacts__location-map" title="Расположение на карте."
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197732!2d30.320472476646085!3d59.93871916209431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1690749136755!5m2!1sru!2sru"
+          width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <a class="contacts__location-image-container" href="https://goo.gl/maps/sYF9GUo3ipDakvAeA">
+          <picture>
+            <source media="(min-width: 1440px)"
+              srcset="img/map/location-desktop.webp 1x, img/map/location-desktop@2x.webp 2x" type="image/webp"
+              width="1440" height="400">
+            <source media="(min-width: 768px)"
+              srcset="img/map/location-tablet.webp 1x, img/map/location-tablet@2x.webp 2x" type="image/webp" width="768"
+              height="400">
+            <source srcset="img/map/location-mobile.webp 1x, img/map/location-mobile@2x.webp 2x" type="image/webp"
+              width="320" height="362">
+            <source media="(min-width: 1440px)"
+              srcset="img/map/location-desktop.png 1x, img/map/location-desktop@2x.png 2x" type="image/png" width="1440"
+              height="400">
+            <source media="(min-width: 768px)"
+              srcset="img/map/location-tablet.png 1x, img/map/location-tablet@2x.png 2x" type="image/png" width="768"
+              height="400">
+            <img class="contacts__location-image" src="img/map/location-mobile.png"
+              srcset="img/map/location-mobile@2x.png 2x" width="320" height="362" alt="Расположение на карте.">
+          </picture>
+        </a>
+      </div>
     </div>
-    <div class="main-footer__container">
-      <div class="social">
-        <img class="logo-title logo-title--size_xl" src="img/logo/logo-title.svg" width="128" height="24" alt="Кэт энерджи.">
+    <div class="social">
+      <div class="social__container container">
+        <a class="social__logo-title-link logo-title" href="#" aria-label="К началу сайта магазина Кэт энерджи.">
+          <svg class="logo-title__icon logo-title__icon--size_xl" role="img" width="128" height="24">
+            <use xlink:href="../stack.svg#icon-logo-title"></use>
+          </svg>
+        </a>
         <ul class="social-list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">
-              <img src="#" width="28" height="22" alt="Мы в Вконтакте">
+            <a class="social__link" href="#" aria-label="Страница в Вконтакте">
+              <svg class="social__icon" role="img" width="28" height="22">
+                <use xlink:href="../stack.svg#icon-vkontakte"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">
-              <img src="#" width="28" height="22" alt="Мы в Ютубе">
+            <a class="social__link" href="#" aria-label="Страница в Ютубе">
+              <svg class="social__icon" role="img" width="28" height="22">
+                <use xlink:href="../stack.svg#icon-youtube"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="#">
-              <img src="#" width="28" height="22" alt="Мы в Телеграме">
+            <a class="social__link" href="#" aria-label="Чат в Телеграме">
+              <svg class="social__icon" role="img" width="28" height="22">
+                <use xlink:href="../stack.svg#icon-telegram"></use>
+              </svg>
             </a>
           </li>
         </ul>
-        <a class="logo-academy" href="#">
+        <a class="logo-academy"
+          href="https://lea.verou.me/blog/2019/05/utility-convert-svg-path-to-all-relative-or-all-absolute-commands/"
+          aria-label="Сайт HTML Academy">
           <span class="logo-academy__name">HTML Academy</span>
-          <img class="logo-academy__icon" src="#" width="27" height="34" alt="Логотип HTML Academy">
+          <svg class="logo-academy__icon" role="img" width="27" height="34">
+            <use xlink:href="../stack.svg#icon-academy"></use>
+          </svg>
         </a>
       </div>
     </div>

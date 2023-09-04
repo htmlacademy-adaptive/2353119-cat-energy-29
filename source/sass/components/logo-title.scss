@@ -1,12 +1,15 @@
 @use "../bootstrap.scss" as *;
 
 .logo-title {
+  color: $special-black;
+}
+
+.logo-title__icon {
   width: 101px;
   height: 18px;
 
   &--size_xl {
     width: 128px;
     height: 24px;
-    justify-self: center;
   }
 }

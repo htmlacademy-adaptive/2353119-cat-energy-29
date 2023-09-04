@@ -1,22 +1,20 @@
 @use "../bootstrap.scss" as *;
 
 .example {
-  background-image: linear-gradient($base-gray, $base-gray);
+  background-image: linear-gradient($basic-gray, $basic-gray);
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(to top, $base-gray 462px, transparent 462px, transparent 100%);
+    background-image: linear-gradient(to top, $basic-gray 462px, transparent 462px, transparent 100%);
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to bottom, transparent 136px, $base-gray 136px, $base-gray 100%);
+    background-image: linear-gradient(to bottom, transparent 136px, $basic-gray 136px, $basic-gray 100%);
   }
 }
 
 .example__container {
-  @include page-margin;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
+  @media (min-width: $tablet-width) { //TODO Проверить нужно?
+    // padding: 0;
   }
 
   @media (min-width: $desktop-width) {

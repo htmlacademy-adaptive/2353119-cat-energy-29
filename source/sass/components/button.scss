@@ -10,8 +10,8 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: $base-white;
-  background-color: $base-bg-color;
+  color: $basic-white;
+  background-color: $basic-green;
 
   &--index {
     padding: 8px 20px;
@@ -23,6 +23,24 @@
       font-size: 20px;
       line-height: 26px;
     }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $special-green;
+
+    @include transition(0.1s, background-color);
+  }
+
+  &:active {
+    color: $basic-white-opacity30;
+  }
+
+  &:disabled,
+  &:not([type="button"]):not([type="submit"]):not([href]) {
+    color: $basic-white-opacity30;
+    background-color: $special-green;
+    cursor: default;
   }
 
   &--form {

@@ -1,8 +1,8 @@
 @use "../bootstrap.scss" as *;
 
-
 .title {
   margin-top: 0;
+  position: relative;
 
   @include font-title;
 
@@ -25,6 +25,45 @@
     @media (min-width: $tablet-width) {
       font-size: 36px;
       line-height: 36px;
+    }
+  }
+
+  &--line {
+    display: flex;
+    align-items: flex-start;
+
+    &::after {
+      @include pseudo(100vw, 2px, $basic-green);
+      @include full-width-vw;
+
+      top: 15px;
+      z-index: -1;
+
+      @media (min-width: $tablet-width) {
+        top: 22px;
+      }
+    }
+  }
+}
+
+.title__wrapper {
+  margin: 0 -20px;
+  padding: 0 20px;
+  background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 -40px;
+    padding: 0 40px;
+  }
+
+  &--catalog {
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      padding: 0 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 -40px;
     }
   }
 }

@@ -1,13 +1,40 @@
 @use "../bootstrap.scss" as *;
 
 .main-header {
-  @include break-point;
-  @include page-padding;
+  &--index {
+    margin-bottom: 20px;
+    border: none;
 
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto);
+      margin-bottom: 82px;
+
+      &::after {
+        @include pseudo;
+        grid-row: 1 / -1;
+        grid-column: -1 / -2;
+        position: static;
+        background-image:
+          linear-gradient($basic-green-opacity85, $basic-green-opacity85),
+          url("../img/hero/hero-cat-background-desktop.jpg"),
+          linear-gradient(to bottom, rgb(76, 75, 80), rgb(89, 79, 84));
+        background-repeat: no-repeat;
+        background-position: center, right bottom, left;
+        background-size: contain;
+        z-index: -2;
+      }
+    }
+  }
+}
+
+.main-header__container {
   position: relative;
-
-  grid-row: 1 / 2;
-  grid-column: 1 / -1;
   padding-top: 13px;
   padding-bottom: 15px;
 
@@ -23,9 +50,25 @@
     padding-top: 55px;
     justify-content: space-between;
   }
+
+  &--index {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 267px;
+      margin-bottom: 29px;
+    }
+  }
 }
 
-.main-header__container {
+.main-header__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;

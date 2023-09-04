@@ -13,11 +13,12 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 80px;
     margin-bottom: 71px;
   }
 }
 
 .program__item {
-  background-color: $base-gray;
+  background-color: $basic-gray;
 }

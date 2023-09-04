@@ -1,14 +1,12 @@
 @use "../bootstrap.scss" as *;
 
 .promo__container {
-  @include page-margin;
-
   display: grid;
   justify-items: center;
   align-items: center;
   padding: 58px 40px 43px;
-  color: $base-white;
-  background-image: linear-gradient($base-gradient-color, $base-gradient-color),
+  color: $basic-white;
+  background-image: linear-gradient($basic-green-opacity85, $basic-green-opacity85),
     url("../img/promo/promo-cat-background.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
@@ -20,7 +18,7 @@
     width: 78px;
     height: 80px;
     margin-bottom: 48px;
-    background-image: url("../img/icon/icon-gift.svg");
+    background-image: url("../stack.svg#icon-gift");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -46,6 +44,7 @@
     min-height: 288px;
     padding: 56px 42px 43px;
     margin: 0;
+    background-position: center;
 
     &::before {
       height: 83px;

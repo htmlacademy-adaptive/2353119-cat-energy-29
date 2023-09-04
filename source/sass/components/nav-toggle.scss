@@ -32,8 +32,9 @@
 .nav-toggle__line::after {
   width: 24px;
   height: 2px;
-  background-color: $base-black;
-  transition: 0.2s all linear;
+  background-color: $basic-black;
+
+  @include transition;
 }
 
 .nav-toggle__line {

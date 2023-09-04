@@ -1,21 +1,38 @@
 @use "../bootstrap.scss" as *;
 
 .social {
-  @include page-margin;
-
-  display: grid;
-  align-items: center;
-  gap: 40px;
   padding: 40px 0;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
     padding: 55px 0;
   }
 
   @media (min-width: $desktop-width) {
     padding: 66px 0;
+  }
+}
+
+.social__container {
+  display: grid;
+  align-items: center;
+  gap: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.social__logo-title-link {
+  justify-self: center;
+
+  &:hover,
+  &:focus {
+    color: $raven-black;
+  }
+
+  &:active {
+    color: $dim-gray;
   }
 }
 
@@ -31,6 +48,21 @@
 .social__link {
   display: grid;
   place-content: center;
+  color: $special-grey;
+
+  &:hover,
+  &:focus {
+    color: $basic-green;
+
+    @include transition;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__icon {
   width: 28px;
   height: 22px;
 }

@@ -3,17 +3,8 @@
 .details__title {
   margin-bottom: 34px;
 
-  &::after {
-    top: 15px;
-  }
-
   @media (min-width: $tablet-width) {
     margin-bottom: 57px;
-
-    &::after,
-    &::before {
-      top: 22px;
-    }
   }
 }
 

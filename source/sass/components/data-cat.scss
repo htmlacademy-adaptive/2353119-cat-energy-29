@@ -18,18 +18,34 @@
   }
 
   &--second {
-    @include full-width-vw;
-
     row-gap: 13px;
     padding: 22px 20px 18px;
-    border-top: 1px solid $base-border-color;
-    border-bottom: 1px solid $base-border-color;
+    position: relative;
+
+    &::before,
+    &::after {
+      @include pseudo(100vw, 1px, $basic-light-gray);
+      @include full-width-vw;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
 
     @media (min-width: $tablet-width) {
+      &::before,
+      &::after {
+        content: none;
+      }
+
       min-height: 196px;
       margin: 0;
       padding: 23px 27px;
-      border: 1px solid $base-border-color;
+      outline: 1px solid $basic-light-gray;
     }
   }
 }

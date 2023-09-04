@@ -1,12 +1,10 @@
 @use "../bootstrap.scss" as *;
 
 .main-container {
-  @include break-point;
+  // @include break-point;
 }
 
 .main-container__program {
-  @include page-margin;
-
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {

@@ -1,12 +1,30 @@
+@use "../bootstrap.scss" as*;
+
 .logo-academy {
   display: flex;
   justify-content: space-between;
   align-items: center;
   column-gap: 23px;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: $basic-dark-grey;
+
+  &:hover .logo-academy__icon,
+  &:focus .logo-academy__icon {
+    color: $basic-green;
+
+    @include transition;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .logo-academy__icon {
   display: block;
   width: 27px;
   height: 34px;
+  color: $special-grey;
 }

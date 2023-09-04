@@ -1,0 +1,7 @@
+@use "../bootstrap.scss" as *;
+
+.container {
+  @include page-padding;
+  @include break-point;
+  margin: 0 auto;
+}

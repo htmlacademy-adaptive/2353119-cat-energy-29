@@ -1,12 +1,6 @@
 @use "../bootstrap.scss" as *;
 
-.inner-container {
-  @include break-point;
-}
-
-.inner-container__title {
-  @include page-margin;
-
+.catalog__title {
   margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
@@ -14,7 +8,7 @@
   }
 }
 
-.inner-container__primary-catalog {
+.catalog__primary {
   margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
@@ -25,3 +19,7 @@
     margin-bottom: 76px;
   }
 }
+
+// .catalog__secondary {
+
+// }
