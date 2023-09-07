@@ -8,7 +8,7 @@
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -25,7 +25,7 @@
         </a>
         <span class="main-header__logo-title logo-title">
           <svg class="logo-title__icon" role="img" width="101" height="18" aria-label="Магазин Кэт энерджи.">
-            <use href="../stack.svg#icon-logo-title"></use>
+            <use href="img/stack.svg#icon-logo-title"></use>
           </svg>
         </span>
         <button class="main-header__toggle nav-toggle" type="button">
@@ -114,7 +114,7 @@
                   <input class="form__input data-owner__input" type="email" name="email" value="kuklachev@gmail.com"
                     placeholder="Ваш e-mail" required>
                   <svg class="data-owner__input-icon" width="20" height="20" aria-hidden="true" focusable="false">
-                    <use href="../stack.svg#icon-email"></use>
+                    <use href="./img/stack.svg#icon-email"></use>
                   </svg>
                 </span>
               </label>
@@ -124,7 +124,7 @@
                   <input class="form__input data-owner__input" type="tel" name="tel" value="8 (960) 900-60-90"
                     placeholder="Ваш телефон" required>
                   <svg class="data-owner__input-icon" width="20" height="20" aria-hidden="true" focusable="false">
-                    <use href="../stack.svg#icon-tel"></use>
+                    <use href="./img/stack.svg#icon-tel"></use>
                   </svg>
                 </span>
               </label>
@@ -206,7 +206,7 @@
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197732!2d30.320472476646085!3d59.93871916209431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1690749136755!5m2!1sru!2sru"
           width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
-        <a class="contacts__location-image-container" href="https://goo.gl/maps/sYF9GUo3ipDakvAeA">
+        <a class="contacts__location-image-container"> <!-- добавить href="https://goo.gl/maps/sYF9GUo3ipDakvAeA" при nojs -->
           <picture>
             <source media="(min-width: 1440px)"
               srcset="img/map/location-desktop.webp 1x, img/map/location-desktop@2x.webp 2x" type="image/webp"
@@ -232,28 +232,28 @@
       <div class="social__container container">
         <a class="social__logo-title-link logo-title" href="#" aria-label="К началу сайта магазина Кэт энерджи.">
           <svg class="logo-title__icon logo-title__icon--size_xl" role="img" width="128" height="24">
-            <use href="../stack.svg#icon-logo-title"></use>
+            <use href="./img/stack.svg#icon-logo-title"></use>
           </svg>
         </a>
         <ul class="social-list">
           <li class="social__item">
             <a class="social__link" href="#" aria-label="Страница в Вконтакте">
               <svg class="social__icon" role="img" width="28" height="22">
-                <use href="../stack.svg#icon-vkontakte"></use>
+                <use href="./img/stack.svg#icon-vkontakte"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#" aria-label="Страница в Ютубе">
               <svg class="social__icon" role="img" width="28" height="22">
-                <use href="../stack.svg#icon-youtube"></use>
+                <use href="./img/stack.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#" aria-label="Чат в Телеграме">
               <svg class="social__icon" role="img" width="28" height="22">
-                <use href="../stack.svg#icon-telegram"></use>
+                <use href="./img/stack.svg#icon-telegram"></use>
               </svg>
             </a>
           </li>
@@ -263,7 +263,7 @@
           aria-label="Сайт HTML Academy">
           <span class="logo-academy__name">HTML Academy</span>
           <svg class="logo-academy__icon" role="img" width="27" height="34">
-            <use href="../stack.svg#icon-academy"></use>
+            <use href="./img/stack.svg#icon-academy"></use>
           </svg>
         </a>
       </div>

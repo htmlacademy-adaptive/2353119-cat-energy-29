@@ -2,6 +2,7 @@
 
 .expenses {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   column-gap: 4px;
   font-family: $font-oswald;

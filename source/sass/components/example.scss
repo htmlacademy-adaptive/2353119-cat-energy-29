@@ -13,10 +13,6 @@
 }
 
 .example__container {
-  @media (min-width: $tablet-width) { //TODO Проверить нужно?
-    // padding: 0;
-  }
-
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
