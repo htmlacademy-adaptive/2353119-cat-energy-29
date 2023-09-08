@@ -20,6 +20,7 @@ body {
   line-height: 18px;
   color: $basic-dark-grey;
   background-color: $basic-white;
+  overflow-x: hidden;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;

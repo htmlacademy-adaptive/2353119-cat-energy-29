@@ -104,6 +104,7 @@
     &--radio,
     &--checkbox {
       column-gap: 20px;
+      cursor: pointer;
     }
 
     &--comment {
@@ -173,7 +174,7 @@
     &:checked + .form__control-mark::after {
       width: 26px;
       height: 26px;
-      background-image: url("../stack.svg#icon-tick");
+      background-image: url("../img/stack.svg#icon-tick");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 18px 14px;

@@ -4,12 +4,12 @@
 @use "./global/fonts.scss";
 @use "./global/variables.scss";
 @use "./global/visually-hidden.scss";
-@use "./components/button.scss";
-@use "./components/title.scss";
+@use "./global/container.scss";
 
 //components
+@use "./components/button.scss";
+@use "./components/title.scss";
 @use "./components/page.scss";
-@use "./global/container.scss";
 @use "./components/main-header.scss";
 @use "./components/main-container.scss";
 @use "./components/main-footer.scss";

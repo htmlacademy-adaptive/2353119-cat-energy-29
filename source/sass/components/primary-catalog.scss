@@ -3,7 +3,6 @@
 .primary-catalog__list {
   @include reset-list;
 
-  //TODO поправить выпадение карточек
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   justify-content: center;
@@ -31,9 +30,7 @@
 
     top: 0;
 
-    //TODO Уточнить
-    //решает проблему с выпадением карточек
-    @media (min-width: 615px) {
+    @media (min-width: $mobile-catalog-card-width) {
       content: none;
     }
   }
@@ -44,8 +41,7 @@
 
     bottom: 0;
 
-    //решает проблему с выпадением карточек
-    @media (min-width: 615px) {
+    @media (min-width: $mobile-catalog-card-width) {
       content: none;
     }
   }
@@ -57,12 +53,6 @@
   @media (min-width: $tablet-width) {
     max-width: 400px;
     padding: 81px 0 0;
-
-    //TODO дубль (придержать)
-    &::before,
-    &:last-child::after {
-      content: none;
-    }
   }
 }
 
