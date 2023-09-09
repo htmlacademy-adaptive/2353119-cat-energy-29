@@ -42,6 +42,10 @@
     column-gap: 49px;
     margin: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    column-gap: 20px;
+  }
 }
 
 .secondary-card__description {

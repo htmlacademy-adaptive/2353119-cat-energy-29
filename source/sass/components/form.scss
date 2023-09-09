@@ -14,7 +14,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 80px;
+    gap: 20px 80px;
     align-items: center;
   }
 
@@ -124,6 +124,8 @@
 }
 
 .form__input {
+  width: 100%;
+  max-width: 800px;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -151,6 +153,7 @@
   }
 
   &--textarea {
+    max-width: 100%;
     resize: none;
     outline: none;
     text-transform: none;

@@ -31,7 +31,6 @@
 
   @media (min-width: $tablet-width) {
     min-width: $tablet-width;
-    // max-width: 1440px;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,20 +53,20 @@
   }
 }
 
-@mixin page-margin {
-  margin-left: $mobile-edges;
-  margin-right: $mobile-edges;
+// @mixin page-margin {
+//   margin-left: $mobile-edges;
+//   margin-right: $mobile-edges;
 
-  @media (min-width: $tablet-width) {
-    margin-left: $tablet-edges;
-    margin-right: $tablet-edges;
-  }
+//   @media (min-width: $tablet-width) {
+//     margin-left: $tablet-edges;
+//     margin-right: $tablet-edges;
+//   }
 
-  @media (min-width: $desktop-width) {
-    margin-left: $desktop-edges;
-    margin-right: $desktop-edges;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     margin-left: $desktop-edges;
+//     margin-right: $desktop-edges;
+//   }
+// }
 
 @mixin full-width-vw {
   margin-left: calc(-100vw / 2 + 100% / 2);

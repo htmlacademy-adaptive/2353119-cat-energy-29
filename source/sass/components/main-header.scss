@@ -20,10 +20,33 @@
         grid-row: 1 / -1;
         grid-column: -1 / -2;
         position: static;
+
+        /* Фолбэк */
         background-image:
           linear-gradient($basic-green-opacity85, $basic-green-opacity85),
           url("../img/hero/hero-cat-background-desktop.jpg"),
-          linear-gradient(to bottom, rgb(76, 75, 80), rgb(89, 79, 84));
+          linear-gradient(to bottom, $hero-bgi-left-0, $hero-bgi-left-100);
+
+        /* Для Chrome и Safari */
+        background-image:
+          linear-gradient($basic-green-opacity85, $basic-green-opacity85),
+          -webkit-image-set(
+            url("../img/hero/hero-cat-background-desktop@2x.webp") 2x,
+            url("../img/hero/hero-cat-background-desktop.webp") 1x
+          ),
+          linear-gradient(to bottom, $hero-bgi-left-0, $hero-bgi-left-100);
+
+        /* Для Firefox */
+        background-image:
+          linear-gradient($basic-green-opacity85, $basic-green-opacity85),
+          image-set(
+            url("../img/hero/hero-cat-background-desktop@2x.webp") type("image/webp") 2x,
+            url("../img/hero/hero-cat-background-desktop.webp") type("image/webp") 1x,
+            url("../img/hero/hero-cat-background-desktop@2x.jpg") 2x,
+            url("../img/hero/hero-cat-background-desktop.jpg") 1x
+          ),
+          linear-gradient(to bottom, $hero-bgi-left-0, $hero-bgi-left-100);
+
         background-repeat: no-repeat;
         background-position: center, right bottom, left;
         background-size: contain;
