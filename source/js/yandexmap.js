@@ -24,4 +24,3 @@ function initMap() {
   map.geoObjects.add(myPlacemark);
 }
 ymaps.ready(initMap);
-
