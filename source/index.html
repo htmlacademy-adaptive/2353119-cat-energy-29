@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preload" href="fonts/lato/LatoCyrillic-Regular-subset.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswald/OswaldCyrillic-regular-subset.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <!-- <link rel="script" href="js/nojs.js"> -->
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
@@ -70,6 +69,7 @@
       <a class="hero__link-program button button--index" href="form.html">подобрать программу</a>
     </section>
   </header>
+  <script src="js/site-navigation.js"></script> <!-- размещение решает проблему с CLS -->
   <main class="main-container">
     <section class="main-container__program program container">
       <h2 class="visually-hidden">Выбор программы питания</h2>
@@ -197,9 +197,7 @@
         </div>
       </div>
       <div class="contacts__location">
-        <!-- <div class="contacts__location-map" id="yandexmap" title="Расположение на карте."></div> -->
-        <iframe class="contacts__location-map" title="Расположение на карте." src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa6693fdd615f3a25807bfbf2c250dd8751a53e03cefd28c3cb51268631f61da4&amp;source=constructor" width="320" height="362" frameborder="0"
-        width="320" height="362" allowfullscreen loading="lazy" referrerpolicy="no-referrer"></iframe>
+        <div class="contacts__container-map" id="yandexmap" title="Расположение на карте."></div>
         <a class="contacts__location-image-container" href="https://goo.gl/maps/sYF9GUo3ipDakvAeA">
           <picture>
             <source media="(min-width: 1440px)"
@@ -263,10 +261,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/site-navigation.js"></script>
-  <!-- <script src="js/nojs.js"></script> -->
-  <!-- <script defer src="https://api-maps.yandex.ru/2.1/?apikey=31646f34-5cbb-4f95-bfd8-49550feff3a8&lang=ru_RU" type="text/javascript"></script> -->
-  <!-- <script defer src="js/yandexmap.js"></script> -->
+  <script src="js/yamapsscript.js"></script>
 </body>
 
 </html>

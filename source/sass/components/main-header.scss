@@ -27,7 +27,7 @@
           url("../img/hero/hero-cat-background-desktop.jpg"),
           linear-gradient(to bottom, $hero-bgi-left-0, $hero-bgi-left-100);
 
-        /* Для Chrome и Safari */
+        /* Для Safari и фолбэк для старых версий Chrome */
         background-image:
           linear-gradient($basic-green-opacity85, $basic-green-opacity85),
           -webkit-image-set(
@@ -36,7 +36,7 @@
           ),
           linear-gradient(to bottom, $hero-bgi-left-0, $hero-bgi-left-100);
 
-        /* Для Firefox */
+        /* Для Chrome и Firefox */
         background-image:
           linear-gradient($basic-green-opacity85, $basic-green-opacity85),
           image-set(

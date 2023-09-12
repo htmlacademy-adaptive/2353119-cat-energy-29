@@ -52,6 +52,7 @@
       </nav>
     </div>
   </header>
+  <script src="js/site-navigation.js"></script> <!-- размещение решает проблему с CLS -->
   <main class="page__catalog catalog">
     <div class="container">
       <h1 class="catalog__title title title--primary">Каталог продукции</h1>
@@ -115,7 +116,7 @@
                 </a>
                 <div class="primary-card__wrapper">
                   <h3 class="primary-card__title">
-                    <a class="primary-card__title-link" href="">Cat Energy PRO 1000 г</a>
+                    <a class="primary-card__title-link" href="#">Cat Energy PRO 1000 г</a>
                   </h3>
                   <dl class="primary-card__parameters">
                     <div class="primary-card__parameter">
@@ -157,7 +158,7 @@
                 </a>
                 <div class="primary-card__wrapper">
                   <h3 class="primary-card__title">
-                    <a class="primary-card__title-link" href="">Cat Energy PRO 500 г</a>
+                    <a class="primary-card__title-link" href="#">Cat Energy PRO 500 г</a>
                   </h3>
                   <dl class="primary-card__parameters">
                     <div class="primary-card__parameter">
@@ -199,7 +200,7 @@
                 </a>
                 <div class="primary-card__wrapper">
                   <h3 class="primary-card__title">
-                    <a class="primary-card__title-link" href="">Cat Energy PRO 1000 г</a>
+                    <a class="primary-card__title-link" href="#">Cat Energy PRO 1000 г</a>
                   </h3>
                   <dl class="primary-card__parameters">
                     <div class="primary-card__parameter">
@@ -241,7 +242,7 @@
                 </a>
                 <div class="primary-card__wrapper">
                   <h3 class="primary-card__title">
-                    <a class="primary-card__title-link" href="">Cat Energy slim 500 г</a>
+                    <a class="primary-card__title-link" href="#">Cat Energy slim 500 г</a>
                   </h3>
                   <dl class="primary-card__parameters">
                     <div class="primary-card__parameter">
@@ -283,7 +284,7 @@
                 </a>
                 <div class="primary-card__wrapper">
                   <h3 class="primary-card__title">
-                    <a class="primary-card__title-link" href="">Cat Energy slim 1000 г</a>
+                    <a class="primary-card__title-link" href="#">Cat Energy slim 1000 г</a>
                   </h3>
                   <dl class="primary-card__parameters">
                     <div class="primary-card__parameter">
@@ -325,7 +326,7 @@
                 </a>
                 <div class="primary-card__wrapper">
                   <h3 class="primary-card__title">
-                    <a class="primary-card__title-link" href="">Cat Energy slim 500 г</a>
+                    <a class="primary-card__title-link" href="#">Cat Energy slim 500 г</a>
                   </h3>
                   <dl class="primary-card__parameters">
                     <div class="primary-card__parameter">
@@ -424,11 +425,8 @@
         </div>
       </div>
       <div class="contacts__location">
-        <iframe class="contacts__location-map" title="Расположение на карте."
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197732!2d30.320472476646085!3d59.93871916209431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1690749136755!5m2!1sru!2sru"
-          width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-        <a class="contacts__location-image-container"> <!-- добавить href="https://goo.gl/maps/sYF9GUo3ipDakvAeA" при nojs -->
+        <div class="contacts__container-map" id="yandexmap" title="Расположение на карте."></div>
+        <a class="contacts__location-image-container" href="https://goo.gl/maps/sYF9GUo3ipDakvAeA">
           <picture>
             <source media="(min-width: 1440px)"
               srcset="img/map/location-desktop.webp 1x, img/map/location-desktop@2x.webp 2x" type="image/webp"
@@ -491,7 +489,7 @@
       </div>
     </div>
   </footer>
-  <script src="./js/site-navigation.js"></script>
+  <script src="js/yamapsscript.js"></script>
 </body>
 
 </html>
