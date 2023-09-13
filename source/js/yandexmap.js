@@ -1,11 +1,8 @@
-let map;
-
 function initMap() {
-
-  map = new ymaps.Map("yandexmap", {
+  const map = new ymaps.Map("yandexmap", {
     center: [59.938631, 30.323037],
     zoom: 14,
-    autofitToViewport: 'always'
+    autoFitToViewport: 'always'
   });
 
   myPlacemark = new ymaps.Placemark([59.938631, 30.323037], {
@@ -16,7 +13,11 @@ function initMap() {
     iconImageSize: [56, 52],
     iconImageOffset: [-5, -38]
   });
+
   map.geoObjects.add(myPlacemark);
+  map.controls.remove("typeSelector");
+  map.controls.remove("trafficControl");
+  map.controls.remove("fullscreenControl");
 }
 
 ymaps.ready(initMap);

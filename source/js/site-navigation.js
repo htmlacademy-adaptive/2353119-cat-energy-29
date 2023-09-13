@@ -1,8 +1,5 @@
 let navSite = document.querySelector('.site-navigation');
 let navToggle = document.querySelector('.nav-toggle');
-let mainHeader = document.querySelector('.main-header');
-
-mainHeader.classList.remove('main-header--nojs');
 
 navToggle.addEventListener('click', function () {
   if (navSite.classList.contains('site-navigation--closed')) {
