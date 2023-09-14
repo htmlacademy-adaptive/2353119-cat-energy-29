@@ -41,7 +41,7 @@
       linear-gradient(to bottom, $hero-bgi-left-0, $hero-bgi-left-100);
 
     background-repeat: no-repeat;
-    background-position: center, center, right, left;
+    background-position: center, center bottom, right, left;
     background-size: contain, contain, 50%, 50%;
     z-index: -1;
   }

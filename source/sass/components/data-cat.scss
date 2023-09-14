@@ -51,11 +51,11 @@
 }
 
 .data-cat__input {
-  min-height: 45px;
+  height: 45px;
   padding: 13px 15px;
 
   @media (min-width: $tablet-width) {
-    min-height: 52px;
+    height: 52px;
     padding: 11px 20px;
   }
 }

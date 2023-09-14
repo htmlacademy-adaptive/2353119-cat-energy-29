@@ -14,7 +14,7 @@
   &:focus .logo-academy__icon {
     color: $basic-green;
 
-    @include transition;
+    @include transition(0.1s, color);
   }
 
   &:active {
@@ -22,9 +22,13 @@
   }
 }
 
+.logo-academy__name {
+  max-width: 200px;
+}
+
 .logo-academy__icon {
   display: block;
-  width: 27px;
+  min-width: 27px;
   height: 34px;
   color: $special-grey;
 }

@@ -43,6 +43,12 @@
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
+  justify-self: center;
+  max-width: 224px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+  }
 }
 
 .social__link {

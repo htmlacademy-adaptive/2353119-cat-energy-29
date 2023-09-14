@@ -9,9 +9,9 @@ function initMap() {
     hintContent: 'Расположение HTML Academy'
   }, {
     iconLayout: 'default#image',
-    iconImageHref: '../img/map/pin.png',
+    iconImageHref: 'img/map/pin.png',
     iconImageSize: [56, 52],
-    iconImageOffset: [-5, -38]
+    iconImageOffset: [-24, -42]
   });
 
   map.geoObjects.add(myPlacemark);
