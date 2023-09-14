@@ -27,21 +27,18 @@
   }
 }
 
-.nav-toggle__line,
-.nav-toggle__line::before,
-.nav-toggle__line::after {
+.nav-toggle__line {
   width: 24px;
   height: 2px;
   background-color: $basic-black;
-  @include transition(0.2s, transform background-color);
-}
 
-.nav-toggle__line {
+  @include transition(0.1s, background-color);
+
   &::before,
   &::after {
-    position: absolute;
+    @include pseudo(100%, 2px, $basic-black);
+    @include transition(0.2s, transform);
     right: 0;
-    content: "";
   }
 
   &::before {

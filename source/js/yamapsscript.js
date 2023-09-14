@@ -1,3 +1,5 @@
+//загрузка кары при скроле страницы
+
 document.addEventListener('DOMContentLoaded', function () {
   const createScript = function (link) {
     const body = document.body;
@@ -24,5 +26,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
   document.addEventListener('scroll', onScroll);
 });
-
-

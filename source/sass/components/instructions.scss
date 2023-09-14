@@ -13,11 +13,11 @@
 }
 
 .instructions__title {
-  line-height: 40px; //косяк в макете
+  line-height: 40px;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    line-height: 1em; //
+    line-height: 1em;
     margin-bottom: 72px;
   }
 }
@@ -73,12 +73,10 @@
   &::before {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    width: 60px;
-    height: 60px;
+
+    @include pseudo(60px, 60px, $basic-green, block, static);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: $basic-green;
-    content: "";
 
     @media (min-width: $tablet-width) {
       min-width: 80px;
