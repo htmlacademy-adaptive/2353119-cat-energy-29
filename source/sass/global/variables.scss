@@ -21,13 +21,33 @@ $special-platinum: #e6e6e6;
 $basic-silver: #bababa;
 $basic-light-coral: #ff8282;
 
+//hero background-image linear-gradient
+//right
+$hero-bgi-right-0: rgb(64, 63, 68);
+$hero-bgi-right-75:rgb(66, 65, 70);
+$hero-bgi-right-90:rgb(75, 66, 65);
+$hero-bgi-right-100:rgb(83, 76, 70);
+//left
+$hero-bgi-left-0: rgb(76, 75, 80);
+$hero-bgi-left-100: rgb(89, 79, 84);
+
+//promo background-image linear-gradient
+//right
+$promo-bgi-right-0: #fcfcfc;
+$promo-bgi-right-100: #f4f4f4;
+
+//left
+$promo-bgi-left-0: #333333;
+$promo-bgi-left-20: #2c2c2c;
+$promo-bgi-left-100: #1b1b1b;
+
 // fonts
 $font-lato: "Lato", "Arial", sans-serif;
 $font-oswald: "Oswald", "Arial", sans-serif;
 
 // break point
+$mobile-catalog-card-width: 485px;
 $mobile-min-width: 250px;
-$mobile-catalog-card-width: 615px;
 $mobile-width-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1440px;

@@ -29,11 +29,17 @@
 .data-owner__input-wrapper {
   display: grid;
   position: relative;
+  max-width: 800px;
 }
 
 .data-owner__input {
-  min-height: 45px;
+  height: 45px;
   padding: 14px 35px 13px 15px;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+    padding: 11px 35px 11px 20px;
+  }
 
   &:focus + .data-owner__input-icon {
     color: $basic-green;
@@ -41,11 +47,6 @@
 
   &:invalid + .data-owner__input-icon {
     color: $basic-light-coral;
-  }
-
-  @media (min-width: $tablet-width) {
-    min-height: 52px;
-    padding: 11px 35px 11px 20px;
   }
 }
 

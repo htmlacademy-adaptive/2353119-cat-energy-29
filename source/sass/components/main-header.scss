@@ -20,10 +20,35 @@
         grid-row: 1 / -1;
         grid-column: -1 / -2;
         position: static;
+
+        /* Фолбэк */
         background-image:
           linear-gradient($basic-green-opacity85, $basic-green-opacity85),
           url("../img/hero/hero-cat-background-desktop.jpg"),
-          linear-gradient(to bottom, rgb(76, 75, 80), rgb(89, 79, 84));
+          linear-gradient(to bottom, $hero-bgi-left-0, $hero-bgi-left-100);
+
+        /* Для Safari и фолбэк для старых версий Chrome */
+        /* stylelint-disable */
+        background-image:
+          linear-gradient($basic-green-opacity85, $basic-green-opacity85),
+          -webkit-image-set(
+            url("../img/hero/hero-cat-background-desktop@2x.webp") 2x,
+            url("../img/hero/hero-cat-background-desktop.webp") 1x
+          ),
+          linear-gradient(to bottom, $hero-bgi-left-0, $hero-bgi-left-100);
+
+        /* Для Chrome и Firefox */
+        background-image:
+          linear-gradient($basic-green-opacity85, $basic-green-opacity85),
+          image-set(
+            url("../img/hero/hero-cat-background-desktop@2x.webp") type("image/webp") 2x,
+            url("../img/hero/hero-cat-background-desktop.webp") type("image/webp") 1x,
+            url("../img/hero/hero-cat-background-desktop@2x.jpg") 2x,
+            url("../img/hero/hero-cat-background-desktop.jpg") 1x
+          ),
+          linear-gradient(to bottom, $hero-bgi-left-0, $hero-bgi-left-100);
+          /* stylelint-enable */
+
         background-repeat: no-repeat;
         background-position: center, right bottom, left;
         background-size: contain;
@@ -36,14 +61,12 @@
 .main-header__container {
   position: relative;
   padding-top: 13px;
-  padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     column-gap: 94px;
     align-items: center;
     padding-top: 25px;
-    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,11 +93,14 @@
 
 .main-header__wrapper {
   display: flex;
+  align-self: flex-start;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding: 0;
   }
 }
 

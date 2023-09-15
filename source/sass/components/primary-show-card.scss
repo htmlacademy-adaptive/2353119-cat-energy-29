@@ -7,11 +7,8 @@
 
 
   &::before {
-    content: "";
+    @include pseudo(30px, 30px, transparent, block, static);
     justify-self: center;
-    display: block;
-    width: 30px;
-    height: 30px;
     margin-bottom: 24px;
     background-image: url("../img/stack.svg#icon-plus");
     background-position: center;

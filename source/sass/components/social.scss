@@ -1,21 +1,21 @@
 @use "../bootstrap.scss" as *;
 
 .social {
-  padding: 40px 0;
+  padding: 20px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 0;
+    padding: 35px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 66px 0;
+    padding: 46px 0;
   }
 }
 
 .social__container {
   display: grid;
   align-items: center;
-  gap: 40px;
+  column-gap: 40px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -24,7 +24,16 @@
 }
 
 .social__logo-title-link {
-  justify-self: center;
+  display: grid;
+  place-content: center;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid $basic-light-gray;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    border-bottom: none;
+  }
 
   &:hover,
   &:focus {
@@ -43,6 +52,17 @@
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
+  justify-self: center;
+  width: 100%;
+  padding: 19px 0;
+  border-bottom: 1px solid $basic-light-gray;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    max-width: 224px;
+    padding-left: 40px;
+    border-bottom: none;
+  }
 }
 
 .social__link {

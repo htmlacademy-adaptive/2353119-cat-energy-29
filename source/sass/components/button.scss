@@ -13,11 +13,8 @@
   color: $basic-white;
   background-color: $basic-green;
 
-  &--index {
-    padding: 8px 20px;
-    font-size: 14px;
-    line-height: 24px;
 
+  &--size_xl {
     @media (min-width: $tablet-width) {
       padding: 14px 20px;
       font-size: 20px;
@@ -41,13 +38,5 @@
     color: $basic-white-opacity30;
     background-color: $special-green;
     cursor: default;
-  }
-
-  &--form {
-    @media (min-width: $tablet-width) {
-      padding: 14px 20px;
-      font-size: 20px;
-      line-height: 24px;
-    }
   }
 }

@@ -1,6 +1,5 @@
 @use "../bootstrap.scss" as *;
 
-//TODO перполнение переделать
 .program-card {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -10,7 +9,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr auto;
-    padding: 77px 63px 63px 52px;
+    padding: 75px 63px 56px 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,13 +22,10 @@
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     align-self: flex-start;
-    display: block;
-    width: 50px;
-    height: 50px;
     margin: 0 20px 22px 0;
     border-radius: 50%;
-    background-color: $basic-green;
-    content: "";
+
+    @include pseudo(50px, 50px, $basic-green, block, static);
 
     @media (min-width: $tablet-width) {
       grid-column: 2 / 3;
@@ -37,7 +33,8 @@
       width: 200px;
       height: 200px;
       margin: 0;
-      align-self: center;
+      align-self: flex-start;
+      transform: translateY(16px);
     }
 
     @media (min-width: $desktop-width) {
@@ -46,17 +43,17 @@
       width: 100px;
       height: 100px;
       margin: 0 62px 40px 0;
+      transform: none;
     }
   }
 
   &::after {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    display: block;
-    position: absolute;
     background-repeat: no-repeat;
     background-size: contain;
-    content: "";
+
+    @include pseudo;
 
     @media (min-width: $tablet-width) {
       grid-column: 2 / 3;
@@ -104,15 +101,14 @@
     @media (min-width: $tablet-width) {
       width: 286px;
       height: 112px;
-      top: 50%;
+      top: 60px;
       left: -43px;
-      transform: translateY(-50%);
     }
 
     @media (min-width: $desktop-width) {
       width: 134px;
       height: 56px;
-      top: 50px;
+      top: 20px;
       left: -19px;
     }
   }
@@ -139,18 +135,13 @@
   margin: 0 0 38px;
 
   &::after {
-    display: block;
-    width: 100%;
-    height: 1px;
-    position: absolute;
+    @include pseudo(100%, 1px, $basic-light-gray);
     bottom: -23px;
-    background-color: $basic-light-gray;
-    content: "";
   }
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
-    margin: 0 53px 56px 0;
+    margin: 0 53px 55px 0;
     border: none;
 
     &::after {
@@ -184,17 +175,16 @@
   }
 
   &::before {
-    width: 18px;
-    height: 2px;
+    @include pseudo(auto, 2px, $basic-black, block, static);
+    min-width: 18px;
     margin-right: -1px;
-    background-color: $basic-black;
-    transition: 0.2s all linear;
-    content: "";
+
+    @include transition(0.2s, min-width);
   }
 
   &:hover::before,
   &:focus::before {
-    width: 26px;
+    min-width: 26px;
   }
 
   &:active {
@@ -203,9 +193,10 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
-    font-size: 20px;
-    line-height: 1em;
+    max-width: 50%;
     padding: 0;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {

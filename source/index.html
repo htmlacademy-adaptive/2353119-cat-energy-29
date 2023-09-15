@@ -3,22 +3,27 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="HTML Academy: Кэт энерджи">
+  <meta name="description" content="Учебный проект, выполненный в рамках профессии «Фронтенд-разработчик #17».">
+  <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/lato/LatoCyrillic-Regular-subset.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/OswaldCyrillic-regular-subset.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link href="css/style.min.css" rel="stylesheet">
-  <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
+  <script src="js/nojs.js"></script>
   <header class="page__header main-header main-header--index main-header--nojs">
     <div class="main-header__container main-header__container--index container">
       <div class="main-header__wrapper">
         <a class="main-header__logo logo" href="index.html">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo/logo-tablet.svg" width="202" height="59">
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg" width="202" height="59">
             <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="174" height="50">
             <img class="logo__image" src="img/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи.">
           </picture>
@@ -62,7 +67,7 @@
           <img class="hero__product-image" src="img/hero/hero-product-mobile.png" srcset="img/hero/hero-product-mobile@2x.png 2x" width="280" height="270" alt="Корм для котов - Кэт энерджи.">
         </picture>
       </div>
-      <a class="hero__link-program button button--index" href="form.html">подобрать программу</a>
+      <a class="hero__link-program button button--size_xl" href="form.html">подобрать программу</a>
     </section>
   </header>
   <main class="main-container">
@@ -74,7 +79,7 @@
             <h3 class="program-card__title title title--secondary">похудение</h3>
             <p class="program-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по
               деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="program-card__link" href="#">
+            <a class="program-card__link" href="catalog.html">
               <span class="program-card__link-text">каталог slim</span>
             </a>
           </div>
@@ -84,7 +89,7 @@
             <h3 class="program-card__title title title--secondary">набор массы</h3>
             <p class="program-card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
               Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="program-card__link" href="#">
+            <a class="program-card__link" href="catalog.html">
               <span class="program-card__link-text">каталог pro</span>
             </a>
           </div>
@@ -115,7 +120,7 @@
       </div>
     </section>
     <section class="main-container__example example">
-      <div class="example__container container"> <!-- desktop container -->
+      <div class="example__container container">
         <div class="example__wrapper example__wrapper--grid_desktop">
           <h2 class="example__title title title--primary">Живой пример</h2>
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
@@ -186,17 +191,15 @@
     <div class="main-footer__container main-footer__container--index-page contacts">
       <div class="main-footer__wrapper container">
         <div class="contacts__container">
-          <h3 class="contacts__title title">приглашаем<br>к сотрудничеству<br>дилеров!</h3>
-          <address class="contacts__address"><span>ул. Большая<br>Конюшенная, д. 19/8</span><br>Санкт-Петербург
+          <h3 class="contacts__title title">приглашаем к&nbsp;сотрудничеству дилеров!</h3>
+          <address class="contacts__address">
+            <span>ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8</span> <span>Санкт-Петербург</span>
           </address>
         </div>
       </div>
       <div class="contacts__location">
-        <iframe class="contacts__location-map" title="Расположение на карте."
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197732!2d30.320472476646085!3d59.93871916209431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1690749136755!5m2!1sru!2sru"
-          width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-        <a class="contacts__location-image-container"> <!-- добавить href="https://goo.gl/maps/sYF9GUo3ipDakvAeA" при nojs -->
+        <div class="contacts__container-map" id="yandexmap" title="Расположение на карте."></div>
+        <a class="contacts__container-image-map" href="https://goo.gl/maps/sYF9GUo3ipDakvAeA">
           <picture>
             <source media="(min-width: 1440px)"
               srcset="img/map/location-desktop.webp 1x, img/map/location-desktop@2x.webp 2x" type="image/webp"
@@ -212,7 +215,7 @@
             <source media="(min-width: 768px)"
               srcset="img/map/location-tablet.png 1x, img/map/location-tablet@2x.png 2x" type="image/png" width="768"
               height="400">
-            <img class="contacts__location-image" src="img/map/location-mobile.png"
+            <img class="contacts__image-map" src="img/map/location-mobile.png"
               srcset="img/map/location-mobile@2x.png 2x" width="320" height="362" alt="Расположение на карте.">
           </picture>
         </a>
@@ -249,9 +252,9 @@
           </li>
         </ul>
         <a class="logo-academy"
-          href="https://lea.verou.me/blog/2019/05/utility-convert-svg-path-to-all-relative-or-all-absolute-commands/"
+          href="https://htmlacademy.ru/intensive/adaptive"
           aria-label="Сайт HTML Academy">
-          <span class="logo-academy__name">HTML Academy</span>
+          <span class="logo-academy__name" lang="en">HTML Academy</span>
           <svg class="logo-academy__icon" role="img" width="27" height="34">
             <use xlink:href="./img/stack.svg#icon-academy"></use>
           </svg>
@@ -259,7 +262,8 @@
       </div>
     </div>
   </footer>
-  <script src="./js/site-navigation.js"></script>
+  <script src="js/site-navigation.js"></script>
+  <script src="js/yamapsscript.js"></script>
 </body>
 
 </html>

@@ -31,7 +31,6 @@
 
   @media (min-width: $tablet-width) {
     min-width: $tablet-width;
-    // max-width: 1440px;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,21 +50,6 @@
   @media (min-width: $desktop-width) {
     padding-left: $desktop-edges;
     padding-right: $desktop-edges;
-  }
-}
-
-@mixin page-margin {
-  margin-left: $mobile-edges;
-  margin-right: $mobile-edges;
-
-  @media (min-width: $tablet-width) {
-    margin-left: $tablet-edges;
-    margin-right: $tablet-edges;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: $desktop-edges;
-    margin-right: $desktop-edges;
   }
 }
 
