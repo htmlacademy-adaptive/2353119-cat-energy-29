@@ -208,8 +208,10 @@
 .program-card__link-text {
   order: -1;
   margin-right: 16px;
+  max-width: calc(100% - 50px);
 
   @media (min-width: $tablet-width) {
     margin-right: 26px;
+    max-width: calc(100% - 60px);
   }
 }
