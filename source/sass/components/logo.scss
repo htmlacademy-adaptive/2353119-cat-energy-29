@@ -10,6 +10,15 @@
   &:active {
     opacity: 0.6;
   }
+
+  &:not([href]) {
+    cursor: default;
+
+    &:hover,
+    &:active {
+      opacity: 1;
+    }
+  }
 }
 
 .logo__image {

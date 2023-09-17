@@ -106,8 +106,7 @@ function server(done) {
     },
     cors: true,
     notify: false,
-    ui: false,
-    browser: "chrome"
+    ui: false
   });
   done();
 }
@@ -139,7 +138,7 @@ export const build = gulp.series(
     scripts,
     svgStack,
     createWebp
-  ),
+  )
 );
 
 // Default
