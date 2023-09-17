@@ -59,8 +59,8 @@
   text-decoration: none;
   color: $basic-black;
 
-  &:hover,
-  &:focus {
+  &:hover:not(.site-navigation__link--current),
+  &:focus:not(.site-navigation__link--current) {
     opacity: 0.6;
 
     @include transition(0.1s, opacity);
@@ -71,7 +71,7 @@
   }
 
   // disabled
-  &:not([href]) {
+  &:not([href]):not(.site-navigation__link--current) {
     opacity: 0.3;
   }
 
@@ -86,6 +86,7 @@
       text-decoration-thickness: 2px;
       text-underline-offset: 9px;
       text-decoration-color: $basic-green;
+      cursor: default;
     }
   }
 
